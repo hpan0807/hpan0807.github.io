@@ -1,0 +1,414 @@
+/* Util CSS */
+.vp_overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:100;    
+    visibility: visible;
+    opacity: 1;    
+}
+.popup_closeicon{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width:30px;
+    z-index:10;
+}
+body.noscroll{
+    overflow:hidden;
+}
+.button:hover{
+    cursor:pointer;
+}
+.overlaymenu_item{
+    width:100%;
+    font-size:1.0em;
+    color:black;
+}
+.overlaymenu_item:hover{
+    background-color:rgba(62,128,185,0.3);
+}
+
+/* Util CSS end */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(245,245,250);
+}
+
+.logo {
+    display: block;
+    background: url('/images/logo.svg');
+}
+
+#main_board {
+    width: 100%;
+    height: 650px;
+    display: block;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#main_subboard1 {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#socialMedia {
+    width: 35px;
+    height: 100%;
+    float: right;
+    position: relative;
+    margin-right: 30px;
+}
+
+.socialMediaLogo {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+    float:left;
+}
+
+#main_subboard2 {
+    width: 100%;
+    margin-top: 280px;
+    margin-bottom: auto;
+    display: inline-block;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    background-image: url("images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content_board {
+    width: 100%;
+}
+
+#menulogo {
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.menubox_wide {
+    height: 36px;
+}
+
+.sub_logo {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+}
+
+#menu2 {
+    display: none;
+}
+
+#fixedMenu {
+    width: 100%;
+    height: 36px;
+    margin-top: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    background-color: rgb(3, 11, 37);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+
+.menu li {
+    display: inline;
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: rgb(50, 134, 144);
+    height: 36px;
+}
+
+.menu li a:active {
+    background-color: rgb(50, 134, 144);
+}
+
+.graphicdesign {
+    margin-top: 9px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.animation {
+    margin-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.forfun {
+    margin-top: 9px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.selected_color {
+    background-color: rgb(50, 134, 144);
+}
+
+.TopDiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 30px
+}
+
+.SortBy {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-left: 150px;
+    color: rgb(158, 200, 213);
+}
+
+.TextSortBy {
+    width: 70px;
+    height: 50px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    float: left;
+    line-height: 50px;
+}
+
+.SortMenuDiv {
+    width: 130px;
+    height: 39px;
+    display: table-cell;
+    position: relative;
+    float: left;
+    vertical-align: middle;
+    padding-top: 11px;
+}
+
+.SortMenuOptionBox {
+    width: 110px;
+    height: 28px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(159, 211, 233);
+}
+
+.SortMenuOptions {
+    display: block;
+    position: relative;
+    float: left;
+    line-height: 28px;
+    margin-left: 10px;
+    color: rgb(10, 46, 50);
+    font-weight: 400;
+
+}
+
+.DropDownArrow {
+    display: block;
+    position: relative;
+    float: right;
+    height: 20px;
+    width: 25px;
+    background-image: url("images/DropDownIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    padding-top: 10px;
+    right: 0;
+    margin-left: 20px;
+}
+
+.Year {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 1.7em;
+    color: rgb(10, 46, 50);
+}
+
+
+@media all and (max-width: 1200px) {
+
+    #main_board {
+        background-color: rgb(159, 211, 233);
+        height: 280px;
+    }
+
+    #main_subboard2 {
+        height: 100px;
+        margin-top: 40px;
+
+    }
+
+    #logo {
+        height: 130px;
+        width: 200px;
+        background-size: 120px;
+        margin-top: 30px;
+
+    }
+
+    #socialMedia {
+        width: 30px;
+        height:100%;
+        margin-right: 10px;
+        margin-top: 5px;
+
+    }
+
+    #main_subboard1 {
+        width: 100%;
+        height: 25px;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .socialMediaLogo {
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+        float: left;
+    }
+
+    #fixedMenu {
+        height: 72px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #menulogo {
+        display: none;
+    }
+
+    #menu2 {
+        width: 100%;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        background-color: rgb(3, 11, 37);
+    }
+
+    #biggerrec {
+        width: 100%;
+        height: 36px;
+        display: block;
+        position: relative;
+    }
+
+    #biggerrec2 {
+        width: 100%;
+        height: 36px;
+        display: block;
+        position: relative;
+    }
+
+    .menubox {
+        float: left;
+        width: 50%;
+        height: 36px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline-block;
+        line-height: 36px;
+    }
+
+    .TopDiv {
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+
+    .SortBy {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .Year {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        display: block;
+    }
+}
+
+
+/* Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
