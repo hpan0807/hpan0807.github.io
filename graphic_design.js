@@ -375,12 +375,15 @@ function addGraphicDesignPage(div_parent) {
         for (var i=0; i < ItemDivArray.length ; i++){
             var div_items = ItemDivArray[i];
             var ItemsPerRow = Math.max(Math.floor(div_items.offsetWidth / item_space), 1);
-            console.log(ItemsPerRow);
             div_items.style.marginLeft = Math.max(((document.body.offsetWidth - ItemsPerRow*item_space)/2), 0)+"px";
             if (ItemsPerRow != div_items.ItemsPerRow){
                 addGraphicItems(div_items, ItemsPerRow);
                 div_items.ItemsPerRow = ItemsPerRow;
             }
+        }
+
+        if (document.getElementById("popup_overlay")) {//If there is a popup, update mainwork image resizing
+            handlePopupMainImage(document.getElementById("popup_mainwork"));
         }
     }
 
