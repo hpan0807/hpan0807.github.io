@@ -280,9 +280,11 @@ body {
 
 @media all and (max-width: 1200px) {
 
+
     #main_board {
-        background-color: rgb(159, 211, 233);
+        background-image: url("images/background.png");
         height: 500px;
+        width: 100%;
     }
 
     #main_subboard2 {
