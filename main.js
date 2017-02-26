@@ -155,6 +155,7 @@ function util_createItemPopup (target_item) {
     var img_close = document.createElement("IMG");
     img_close.id = "popup_closeicon";
     img_close.className = "button";
+    img_close.style.display = "none";
     img_close.src = "images/CloseIcon.svg";
     img_close.onclick = function(event){
         document.body.classList.toggle("noscroll",false);
@@ -293,10 +294,12 @@ function handlePopupMainImage(imgelement) {
 function handlePopupSizes() {
     if (document.getElementById("popup_overlay").offsetWidth > 1200) {//Desktop View
         document.getElementById("popup_description").style.fontSize = "0.8em";
+        document.getElementById("popup_closeicon").style = "";
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", false);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", true);
     } else {//Mobile View
         document.getElementById("popup_description").style.fontSize = "2.0em";
+        document.getElementById("popup_closeicon").style = "";
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", true);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", false);
     }    

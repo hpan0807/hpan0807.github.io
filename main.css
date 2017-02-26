@@ -18,8 +18,8 @@
 }
 .popup_closeicon_mobile{
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
     width: 90px;
     z-index:10;
 }
