@@ -128,6 +128,7 @@ function util_createExpandingOverlayMenu(target_element, menu_datas, menu_string
  type             : Popup shape ("Conversation", "Rectangle")
  direction        : Popup expand direction ("Top", "Left")
  */
+var arrow_size, arrow_margin = 30;
 function util_createItemPopup (target_item) {
 
     var detail_obj = target_item.DetailJsonObj;
@@ -170,10 +171,10 @@ function util_createItemPopup (target_item) {
     div_popup.appendChild(div_bottomrow);
 
     var div_mainworkframe = document.createElement("DIV");
-    div_mainworkframe.setAttribute("style", "height:100%; display:inline-flex; justify-content:center; visibility:hidden;");
+    div_mainworkframe.setAttribute("style", "height:100%; width:100%; display:inline-flex; justify-content:center; visibility:hidden;");
     div_mainrow.appendChild(div_mainworkframe);
 
-    var arrow_size = 30;//in pixels
+    arrow_size = 30;//in pixels
     var arrow_color = "rgba(200,200,200,1)";
 
     var div_leftarrow = document.createElement("DIV");
@@ -182,10 +183,11 @@ function util_createItemPopup (target_item) {
     div_leftarrow.onclick = onArrowClick;
     div_leftarrow.setAttribute("style", "width:0; height:0;" +
         "border-top:" + arrow_size + "px solid transparent; border-bottom:" + arrow_size + "px solid transparent; border-right:" + arrow_size + "px solid " + arrow_color + ";" +
-        " float:left; align-self:center; margin-right:30px; visibility:hidden; opacity: 0.3;");
+        " float:left; align-self:center; margin-right:"+arrow_margin+"px; visibility:hidden; opacity: 0.3;");
     div_mainworkframe.appendChild(div_leftarrow);
 
     var img_mainwork = document.createElement("IMG");
+    img_mainwork.id = "popup_mainwork";
     img_mainwork.setAttribute("style", "float:left; align-self:center; max-width:100%; max-height: 100%; height: auto; width: auto;");
     let mainwork_index = 0;
     let img_ratio = setImageByAspectRatio(img_mainwork, detail_obj.works[mainwork_index].src);
@@ -198,7 +200,7 @@ function util_createItemPopup (target_item) {
     div_rightarrow.onclick = onArrowClick;
     div_rightarrow.setAttribute("style", "width:0; height:0; " +
         "border-top:" + arrow_size + "px solid transparent; border-bottom:" + arrow_size + "px solid transparent; border-left:" + arrow_size + "px solid " + arrow_color + ";" +
-        " float:left; align-self:center; margin-left:30px; opacity: 0.3;");
+        " float:left; align-self:center; margin-left:"+arrow_margin+"px; opacity: 0.3;");
     if (detail_obj.works.length == 1) div_rightarrow.style.visibility = "hidden";
     div_mainworkframe.appendChild(div_rightarrow);
 
@@ -227,7 +229,9 @@ function util_createItemPopup (target_item) {
         var img = new Image();
         img.onload = function () {
             imgelement.src = imgsrc;
-            imgelement.style.height = String(100 * Math.min(img.height / img.width *1.5, 1)) + "%";
+            imgelement.RealWidth = img.width;
+            imgelement.RealHeight = img.height;
+            handlePopupMainImage(imgelement);
             div_mainworkframe.classList.toggle("fadeIn", true);
             div_mainworkframe.style.visibility = "visible";
         };
@@ -258,6 +262,26 @@ function util_createItemPopup (target_item) {
 
     function createProcessItem(src){
 
+    }
+}
+
+function handlePopupMainImage(imgelement) {    
+    let aspect_ratio = imgelement.RealHeight / imgelement.RealWidth; // height / width
+    let width1 = document.getElementById("popup_overlay").offsetHeight*0.82 / imgelement.offsetHeight * imgelement.offsetWidth + arrow_size*2 + arrow_margin*4;
+    let width2 = document.getElementById("popup_overlay").offsetWidth;
+    console.log("Updating Popup : "+width1 +", "+width2);
+    if (width1 < width2) {//Desktop View
+        if (imgelement.ViewMode == "mobile" || typeof imgelement.ViewMode == "undefined") {
+            console.log("changing to desktop view");
+            imgelement.style.width = "";
+            imgelement.style.height = String(100 * Math.min(aspect_ratio * 1.5, 1)) + "%";
+            imgelement.ViewMode = "desktop";            
+        }        
+    } else if (imgelement.ViewMode == "desktop" || typeof imgelement.ViewMode == "undefined") {//Mobile View
+        console.log("changing to mobile view");
+        imgelement.style.height = "";
+        imgelement.style.width = "calc(100% - " + String(arrow_size * 2 + arrow_margin * 4) + "px)";
+        imgelement.ViewMode = "mobile";
     }
 }
 
