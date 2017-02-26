@@ -296,7 +296,7 @@ function handlePopupSizes() {
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", false);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", true);
     } else {//Mobile View
-        document.getElementById("popup_description").style.fontSize = "1.5em";
+        document.getElementById("popup_description").style.fontSize = "2.0em";
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", true);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", false);
     }    
