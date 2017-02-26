@@ -279,12 +279,11 @@ body {
 
 
 @media all and (max-width: 1200px) {
-
+    
 
     #main_board {
-        background-image: url("images/background.png");
         height: 500px;
-        width: 100%;
+        background-attachment: scroll;
     }
 
     #main_subboard2 {
