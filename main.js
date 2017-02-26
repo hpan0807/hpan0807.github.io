@@ -294,12 +294,12 @@ function handlePopupMainImage(imgelement) {
 function handlePopupSizes() {
     if (document.getElementById("popup_overlay").offsetWidth > 1200) {//Desktop View
         document.getElementById("popup_description").style.fontSize = "0.8em";
-        document.getElementById("popup_closeicon").style = "";
+        document.getElementById("popup_closeicon").style.display = "";
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", false);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", true);
     } else {//Mobile View
         document.getElementById("popup_description").style.fontSize = "2.0em";
-        document.getElementById("popup_closeicon").style = "";
+        document.getElementById("popup_closeicon").style.display = "";
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", true);
         document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", false);
     }    
