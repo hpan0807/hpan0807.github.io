@@ -286,10 +286,11 @@ body {
 
 
 @media all and (max-width: 1200px) {
+    
 
     #main_board {
-        background-color: rgb(159, 211, 233);
         height: 500px;
+        background-attachment: scroll;
     }
 
     #main_subboard2 {
@@ -361,6 +362,14 @@ body {
         position: relative;
     }
 
+    .popup_closeicon{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width:60px;
+        z-index:10;
+    }
+
     .menubox {
         float: left;
         width: 50%;
@@ -409,10 +418,10 @@ body {
 
     }
     .SortBy {
-        width:100%;
+        width:calc(100% - 50px);
         height:60px;
         position: relative;
-        display: inline-block;
+        display: block;
         margin-left: 50px;
         font-family: 'Open Sans', sans-serif;
     }
