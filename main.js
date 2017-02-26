@@ -79,7 +79,7 @@ util_getOffset = function (el) {
         el = el.offsetParent;
     }
     return { top: _y, left: _x, bottom: _y+_height};
-}
+};
 
 /*
  target_element : html which the menu expands under
@@ -99,7 +99,7 @@ function util_createExpandingOverlayMenu(target_element, menu_datas, menu_string
     div_menu.TargetElement = target_element;
     div_menu.onclick = function (event) {
         event.stopPropagation();
-    }
+    };
 
     for (var i = 0; i < menu_datas.length; i++) {
         var div_menuitem = document.createElement("DIV");
@@ -113,7 +113,7 @@ function util_createExpandingOverlayMenu(target_element, menu_datas, menu_string
             div_menu.TargetElement.firstElementChild.innerText = this.innerText;
             div_menu.parentElement.removeChild(div_menu);
             if (handler_function) handler_function();
-        }
+        };
         div_menu.appendChild(div_menuitem);
     }
 
@@ -139,7 +139,7 @@ function util_createItemPopup (target_item) {
     div_overlay.onclick = function (event) {
         document.body.classList.toggle("noscroll",false);
         this.parentElement.removeChild(this);
-    }
+    };
 
     var div_popup = document.createElement("DIV");
     div_popup.id = "popup";
@@ -148,7 +148,7 @@ function util_createItemPopup (target_item) {
     div_popup.onclick = function (event) {
         event.stopPropagation();
         event.preventDefault();
-    }
+    };
 
     /* ***CLOSE ICON include (X) / go to popup_closeicon in css*/
     var img_close = document.createElement("IMG");
@@ -206,7 +206,7 @@ function util_createItemPopup (target_item) {
     return div_overlay;
 
     function onArrowClick(event) {
-        mainwork_index += this.AddIndex
+        mainwork_index += this.AddIndex;
         setImageByAspectRatio(img_mainwork, detail_obj.works[mainwork_index].src);
         if (mainwork_index == 0) {
             div_leftarrow.style.visibility = "hidden";
@@ -230,7 +230,7 @@ function util_createItemPopup (target_item) {
             imgelement.style.height = String(100 * Math.min(img.height / img.width *1.5, 1)) + "%";
             div_mainworkframe.classList.toggle("fadeIn", true);
             div_mainworkframe.style.visibility = "visible";
-        }
+        };
         img.src = imgsrc;
     }
 

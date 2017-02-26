@@ -340,11 +340,12 @@ function addGraphicDesignPage(div_parent) {
 
     /* Drop down menu */
     div_sortmenuoptionbox.onclick = function(event){
+
         if (!document.getElementById("menu_window")){
             var sort_data = ["all","pos","log","oth"];
             var sort_str = ["All","Posters","Logos","Others"];
 
-            var div_dropdownmenu = util_createExpandingOverlayMenu(this, sort_data, sort_str, 3, onGraphicDesignMenuClick);
+            var div_dropdownmenu = util_createExpandingOverlayMenu(this, sort_data, sort_str, 4, onGraphicDesignMenuClick);
             this.parentElement.appendChild(div_dropdownmenu);
         }
     }
@@ -371,29 +372,45 @@ function addGraphicDesignPage(div_parent) {
 
     /* ============================= Internal Functions =============================== */
     function graphic_onWindowResize(event){
-        var item_space = 310;
-        for (var i=0; i < ItemDivArray.length ; i++){
-            var div_items = ItemDivArray[i];
-            var ItemsPerRow = Math.max(Math.floor(div_items.offsetWidth / item_space), 1);
-            console.log(ItemsPerRow);
-            div_items.style.marginLeft = Math.max(((document.body.offsetWidth - ItemsPerRow*item_space)/2), 0)+"px";
-            if (ItemsPerRow != div_items.ItemsPerRow){
-                addGraphicItems(div_items, ItemsPerRow);
+        if(document.body.offsetWidth > 1200){
+            var item_space = 310;
+            for (var i=0; i < ItemDivArray.length ; i++){
+                var div_items = ItemDivArray[i];
+                var ItemsPerRow = Math.max(Math.floor(div_items.offsetWidth / item_space), 1);
+                console.log(ItemsPerRow);
+                div_items.style.marginLeft = Math.max(((document.body.offsetWidth - ItemsPerRow*item_space)/2), 0)+"px";
+                if (ItemsPerRow != div_items.ItemsPerRow){
+                    addGraphicItems(div_items, ItemsPerRow, "250px", "height:250px;");
+                    div_items.ItemsPerRow = ItemsPerRow;
+                }
+            }
+        }else{
+            for (var i=0; i < ItemDivArray.length ; i++){
+                var div_items = ItemDivArray[i];
+                var ItemsPerRow = 1;
+
+                console.log(ItemsPerRow);
+                let itemsize = document.body.offsetWidth*0.7;
+                div_items.style.marginLeft = Math.max(((document.body.offsetWidth - itemsize-60)/2), 0)+"px";
+                addGraphicItems(div_items, ItemsPerRow,itemsize+ "px","height:"+itemsize+"px;");
                 div_items.ItemsPerRow = ItemsPerRow;
+
             }
         }
+
+
     }
 
 
 
-    function addGraphicItems(div_items, i_perrow) {
+    function addGraphicItems(div_items, i_perrow, itemwidth, parentheight) {
         div_items.innerHTML = "";
         var menubox = document.getElementById("graphic_menu");
         var targetstr = menubox.DataFromMenu;
         var graphiclist_clone = div_items.Items.slice(0);
         while (graphiclist_clone.length > 0) {
             var div_wrapper = document.createElement("DIV");
-            div_wrapper.setAttribute("style", "display:block; width:100%; height:250px; margin-top:60px; margin-bottom:60px;");
+            div_wrapper.setAttribute("style", "display:block; width:100%; "+parentheight+" margin-top:60px; margin-bottom:60px;");
             for (var i = 0; (i < i_perrow) && graphiclist_clone.length>0; i++) {
                 var gl_json = graphiclist_clone.shift();
                 var gl_dir = gl_json.titlesrc;
@@ -413,14 +430,14 @@ function addGraphicDesignPage(div_parent) {
 
                 var div_works = document.createElement("DIV");
                 div_works.setAttribute("style", "float:left; margin-left:30px; margin-right:30px;" +
-                    "width: 250px; height:250px; background-size:250px; background-repeat: no-repeat;");
+                    "width: "+itemwidth+"; height: "+itemwidth+"; background-size:"+itemwidth+"; background-repeat: no-repeat;");
                 div_works.style.backgroundImage = "url(" + gl_dir + ")";
                 div_works.className = "gi_"+gl_dir.type+" graphic_item button";
                 div_works.DetailJsonObj = gl_json;
                 div_works.onclick = function (event){
                     document.body.classList.toggle("noscroll",true);
                     document.body.appendChild(util_createItemPopup(this));
-                }
+                };
                 div_wrapper.appendChild(div_works);
             }
             if (div_wrapper.children.length > 0) div_items.appendChild(div_wrapper);
