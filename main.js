@@ -153,7 +153,9 @@ function util_createItemPopup (target_item) {
 
     /* ***CLOSE ICON include (X) / go to popup_closeicon in css*/
     var img_close = document.createElement("IMG");
-    img_close.className = "button popup_closeicon";
+    img_close.id = "popup_closeicon";
+    img_close.className = "button";
+    img_close.style.display = "none";
     img_close.src = "images/CloseIcon.svg";
     img_close.onclick = function(event){
         document.body.classList.toggle("noscroll",false);
@@ -167,6 +169,7 @@ function util_createItemPopup (target_item) {
     div_popup.appendChild(div_mainrow);
     var div_bottomrow = document.createElement("DIV");
     div_bottomrow.setAttribute("style", "width:100%; height:10%; text-align:center; color:white; margin-top:1%; margin-bottom:2%; font-size: 0.8em;");
+    div_bottomrow.id = "popup_description";
     div_bottomrow.innerText = detail_obj.title;
     div_popup.appendChild(div_bottomrow);
 
@@ -174,7 +177,7 @@ function util_createItemPopup (target_item) {
     div_mainworkframe.setAttribute("style", "height:100%; width:100%; display:inline-flex; justify-content:center; visibility:hidden;");
     div_mainrow.appendChild(div_mainworkframe);
 
-    arrow_size = 30;//in pixels
+    arrow_size = 50;//in pixels
     var arrow_color = "rgba(200,200,200,1)";
 
     var div_leftarrow = document.createElement("DIV");
@@ -232,6 +235,7 @@ function util_createItemPopup (target_item) {
             imgelement.RealWidth = img.width;
             imgelement.RealHeight = img.height;
             handlePopupMainImage(imgelement);
+            handlePopupSizes();
             div_mainworkframe.classList.toggle("fadeIn", true);
             div_mainworkframe.style.visibility = "visible";
         };
@@ -275,14 +279,31 @@ function handlePopupMainImage(imgelement) {
             console.log("changing to desktop view");
             imgelement.style.width = "";
             imgelement.style.height = String(100 * Math.min(aspect_ratio * 1.5, 1)) + "%";
-            imgelement.ViewMode = "desktop";            
+            imgelement.ViewMode = "desktop";
+            
         }        
     } else if (imgelement.ViewMode == "desktop" || typeof imgelement.ViewMode == "undefined") {//Mobile View
         console.log("changing to mobile view");
         imgelement.style.height = "";
         imgelement.style.width = "calc(100% - " + String(arrow_size * 2 + arrow_margin * 4) + "px)";
         imgelement.ViewMode = "mobile";
+        
     }
+}
+
+function handlePopupSizes() {
+    if (document.getElementById("popup_overlay").offsetWidth > 1200) {//Desktop View
+        document.getElementById("popup_description").style.fontSize = "0.8em";
+        document.getElementById("popup_closeicon").style.display = "";
+        document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", false);
+        document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", true);
+    } else {//Mobile View
+        document.getElementById("popup_description").style.fontSize = "2.0em";
+        document.getElementById("popup_closeicon").style.display = "";
+        document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_mobile", true);
+        document.getElementById("popup_closeicon").classList.toggle("popup_closeicon_desktop", false);
+    }    
+    
 }
 
 function openInNewTab(url) {

@@ -9,11 +9,18 @@
     visibility: visible;
     opacity: 1;    
 }
-.popup_closeicon{
+.popup_closeicon_desktop{
     position: absolute;
     top: 5%;
     right: 5%;
     width:30px;
+    z-index:10;
+}
+.popup_closeicon_mobile{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 90px;
     z-index:10;
 }
 body.noscroll{
