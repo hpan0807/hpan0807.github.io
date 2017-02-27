@@ -206,6 +206,7 @@ body {
     position: absolute;
     margin-left: 150px;
     color: rgb(158, 200, 213);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .TextSortBy {
@@ -216,6 +217,7 @@ body {
     position: relative;
     float: left;
     line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .SortMenuDiv {
@@ -276,10 +278,93 @@ body {
     font-size: 1.7em;
     color: rgb(10, 46, 50);
 }
+.div_contact{
+    width:100%;
+    height:100%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
 
+.contact_icon{
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    float:left;
+    display: block;
+}
+.contact_icontext{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+}
+
+
+div#main{
+width: 830px;
+height: 650px;
+margin: 0px auto; 
+font-family: 'Ubuntu', sans-serif;
+}
+
+div#form_sample{
+text-align:center;
+border: 1px solid #ccc;
+width: 300px;
+padding: 0px 50px 15px;
+margin-top:20px;
+box-shadow: 0 0 15px;
+border-radius: 6px;
+float:left;
+}
+
+#main h1{
+margin-top:40px; 
+}
+
+hr{
+margin-top:-5px;
+}
+
+label{
+float: left;
+font-size: 16px;
+}
+
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height: 35px;
+margin-bottom: 25px;
+padding:10px;
+border:3px solid #2BC1F2;
+}
+
+textarea{
+width:100%;
+border:3px solid #2BC1F2;
+padding:10px;
+margin-bottom: 25px;
+margin-top: 10px;
+height: 100px;
+resize:none;
+}
+
+input[type="submit"]{
+width:100%;
+padding: 10px 45px;
+background-color: #2BC1F2;
+border: none;
+color: white;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+font-family: 'Ubuntu', sans-serif;
+}
 
 @media all and (max-width: 1200px) {
-    
+
 
     #main_board {
         height: 500px;

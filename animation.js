@@ -8,4 +8,6 @@ function addAnimationPage(div_parent){
     div_sample.innerText = "Animation!";
     div_parent.appendChild(div_sample);
 
+
+
 }
