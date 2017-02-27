@@ -170,7 +170,7 @@ function addForfunPage(div_parent) {
 
 
         if (document.getElementById("popup_overlay")) {//If there is a popup, update mainwork image resizing
-            handlePopupMainImage(document.getElementById("popup_mainwork"));
+            handlePopupMainItem(document.getElementById("popup_mainwork"));
         }
     }
 

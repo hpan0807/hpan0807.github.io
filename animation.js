@@ -11,20 +11,20 @@ var AnimationList2016 = [
         description: "My first collaboration animation with Tan Nei Choi",
         works: [{ name: 'Poster', src: 'animation/EggWitch/EggWitch.png', type: 'image' }, { name: 'Poster', src: 'animation/EggWitch/EggWitch2.jpg', type: 'image' }]
     },
-     {
-         title: "Don't Pull!",
-         titlesrc: "animation/donple/DontPull.mp4",
-         type: "video/mp4",
-         description: "",
-         works: [{ name: 'Poster', src: 'animation/donple/DontPull1.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull2.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull3.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull4.png', type: 'image' }]
-     },
-      {
-          title: "Butterfly Lands on a Girl",
-          titlesrc: "animation/PhotographyAnimation.mp4",
-          type: "video/mp4",
-          description: "My first animation using photography",
-          works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
-      }
+    {
+        title: "Don't Pull!",
+        titlesrc: "animation/donple/DontPull.mp4",
+        type: "video/mp4",
+        description: "",
+        works: [{ name: 'Poster', src: 'animation/donple/DontPull1.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull2.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull3.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull4.png', type: 'image' }]
+    },
+    {
+        title: "Butterfly Lands on a Girl",
+        titlesrc: "animation/PhotographyAnimation.mp4",
+        type: "video/mp4",
+        description: "My first animation using photography",
+        works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
+    }
 ];
 
 var AnimationList2015 = [
@@ -34,23 +34,23 @@ var AnimationList2015 = [
          type: "video/mp4",
          description: ""
      },
-      {
-          title: "Jumpling Flour Sack Study",
-          titlesrc: "animation/practices/JumpingFlourSack.mp4",
-          type: "video/mp4",
-          description: ""
-      },
-         {
-             title: "Bouncing Ball Study",
-             titlesrc: "animation/practices/BouncingBall.mp4",
-             type: "video/mp4",
-             description: ""
-         }
+     {
+         title: "Jumpling Flour Sack Study",
+         titlesrc: "animation/practices/JumpingFlourSack.mp4",
+         type: "video/mp4",
+         description: ""
+     },
+     {
+         title: "Bouncing Ball Study",
+         titlesrc: "animation/practices/BouncingBall.mp4",
+         type: "video/mp4",
+         description: ""
+     }
 ];
 
-function addAnimationPage(div_parent){
+function addAnimationPage(div_parent) {
 
-    window.onresize = animation_onWindowResize;    
+    window.onresize = animation_onWindowResize;
 
     var div_cushion = document.createElement("DIV");
     div_cushion.setAttribute("style", "display:block; width:100%; height:30px;");
@@ -74,12 +74,12 @@ function addAnimationPage(div_parent){
         } else {//Mobile View            
             for (let i = 0; i < item_wrappers.length; i++) {
                 item_wrappers[i].classList.toggle("mobile", true);
-                videos[i].width = String(div_parent.offsetWidth*0.9);
+                videos[i].width = String(div_parent.offsetWidth * 0.9);
             }
         }
 
         if (document.getElementById("popup_overlay")) {//If there is a popup, update mainwork image resizing
-            handlePopupMainImage(document.getElementById("popup_mainwork"));
+            handlePopupMainItem(document.getElementById("popup_mainwork"));
             handlePopupSizes();
         }
     }
@@ -89,7 +89,7 @@ function addAnimationPage(div_parent){
         div_year.className = "Year";
         div_year.innerText = String(year);
         div_parent.appendChild(div_year);
-        
+
 
         for (var i = 0; i < items.length; i++) {
             let item = items[i];
@@ -112,23 +112,24 @@ function addAnimationPage(div_parent){
             source_item.type = item.type;
             video_item.appendChild(source_item);
             div_itemwrapper.appendChild(video_item);
+            video_item.load();
             //Description
             var div_description = document.createElement("DIV");
             div_description.className = "animation_itemdescription";
             div_description.innerText = item.description;
             div_itemwrapper.appendChild(div_description);
             //Process Work Button
-
-            var div_processworkbutton = document.createElement("DIV");
-            div_processworkbutton.className = "processwork_button button";
-            div_processworkbutton.innerText = "View Process Work";
-            div_processworkbutton.DetailJsonObj = item;
-            div_processworkbutton.onclick = function (event) {
-                document.body.classList.toggle("noscroll", true);
-                document.body.appendChild(util_createItemPopup(this));
-            }
-           
-            div_itemwrapper.appendChild(div_processworkbutton);
+            if (item.works) {
+                var div_processworkbutton = document.createElement("DIV");
+                div_processworkbutton.className = "processwork_button button";
+                div_processworkbutton.innerText = "View Process Work";
+                div_processworkbutton.DetailJsonObj = item;
+                div_processworkbutton.onclick = function (event) {
+                    document.body.classList.toggle("noscroll", true);
+                    document.body.appendChild(util_createItemPopup(this));
+                }
+                div_itemwrapper.appendChild(div_processworkbutton);
+            }                        
 
             div_parent.appendChild(div_itemwrapper);
         }
