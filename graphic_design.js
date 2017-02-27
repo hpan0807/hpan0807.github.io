@@ -353,18 +353,10 @@ function addGraphicDesignPage(div_parent) {
     /* ================= Adding Items ====================== */
     var ItemDivArray = [];
     window.onresize = graphic_onWindowResize;
+    
 
-
-    var graphic_list16 = ["18boo.png","16boo.png","17boo.png","01log.png","02pos.png","03pos.png","04pos.png","05pos.png","06pos.png","07sce.jpg",
-        "08pat.jpg", "09ins.png", "10car.png", "11pro.png", "12tsh.png", "13pos.png","15pos.png", "14pos.png"];
-
-    var graphic_list15 = ["01log.png", "02log.jpg", "03log.png", "04pos.png", "05pos.png", "06pos.jpg", "07pos.jpg", "08pos.png", "09pos.png",
-        "10pos.png", "11pos.PNG", "12pos.jpg", "13bro.png", "14fai.png", "15cha.png", "16tsh.png", "17pos.png"];
-
-
-
-    addItemsForYear(2016, "2016titles", GraphicDesignJsonList2016);
-    addItemsForYear(2015, "2015titles", GraphicDesignJsonList2015);
+    addItemsForYear(2016, GraphicDesignJsonList2016);
+    addItemsForYear(2015, GraphicDesignJsonList2015);
 
     graphic_onWindowResize();// Update Items View
 
@@ -448,7 +440,7 @@ function addGraphicDesignPage(div_parent) {
         }
     }
 
-    function addItemsForYear(year, folder, items){
+    function addItemsForYear(year, items){
         var div_year = document.createElement("DIV");
         div_year.className = "Year";
         div_year.innerText = String(year);
