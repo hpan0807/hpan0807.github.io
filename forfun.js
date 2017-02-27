@@ -5,12 +5,102 @@
 var ForfunList = [
 
     {
-        title: "Sketches(16)",
-        titlesrc: "sketches/1.png",
+        title: "Fun doodle",
+        titlesrc: "sketches/title1.png",
         type:"pos",
         works: [{ name: 'Poster', src: 'sketches/1.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title2.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/2.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title3.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/3.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title4.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/4.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title5.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/5.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title6.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/6.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title7.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/7.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title8.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/8.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title9.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/9.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title10.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/10.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title11.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/11.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title12.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/12.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title13.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/13.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title14.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/14.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title15.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/15.jpg', type: 'image' }]
+    },
+    {
+        title: "Fun doodle",
+        titlesrc: "sketches/title16.jpg",
+        type: "pos",
+        works: [{ name: 'Poster', src: 'sketches/16.jpg', type: 'image' }]
     }
-
+ 
   
 
 ];
