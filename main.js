@@ -243,12 +243,12 @@ function util_createItemPopup (target_item) {
     function setVideoByScreenSize(video_element) {
         div_mainworkframe.style.visibility = "hidden";
         div_mainworkframe.classList.toggle("fadeIn", false);
-        video_element.oncanplay = function () {
+        video_element.addEventListener("canplaythrough", function () {
             handlePopupMainVideo(video_element);//Sets Video Size according to Screen Size
             handlePopupSizes();
             div_mainworkframe.classList.toggle("fadeIn", true);
             div_mainworkframe.style.visibility = "visible";
-        }
+        }, false)
         video_element.load();
     }
 
