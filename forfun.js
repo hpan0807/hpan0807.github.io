@@ -8,8 +8,8 @@ var ForfunList = [
         title: "Sketches(16)",
         titlesrc: "sketches/1.png",
         type:"pos",
-        works: [{ name: 'Poster', src: 'sketches/1.jpg', type: 'image' },works: [{ name: 'Poster', src: 'sketches/2.jpg', type: 'image' },works: [{ name: 'Poster', src: 'sketches/3.jpg', type: 'image' },works: [{ name: 'Poster', src: 'sketches/4.jpg', type: 'image' }]
-    },
+        works: [{ name: 'Poster', src: 'sketches/1.jpg', type: 'image' }]
+    }
 
   
 
