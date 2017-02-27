@@ -106,7 +106,7 @@ function addAnimationPage(div_parent) {
             var video_item = document.createElement("VIDEO");
             video_item.className = "animation_itemvideo";
             video_item.setAttribute("controls", true);
-            video_item.preload = true;
+            video_item.preload = "metadata";
             video_item.width = "640";
             var source_item = document.createElement("SOURCE");
             source_item.src = item.titlesrc;
