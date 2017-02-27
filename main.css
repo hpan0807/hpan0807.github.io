@@ -39,6 +39,9 @@ body.noscroll{
 }
 
 /* Util CSS end */
+
+
+/* COMMON CSS */
 body {
     margin: 0;
     padding: 0;
@@ -107,6 +110,7 @@ body {
 #content_board {
     width: 100%;
 }
+
 
 #menulogo {
     height: 100%;
@@ -285,6 +289,55 @@ body {
     font-size: 1.7em;
     color: rgb(10, 46, 50);
 }
+/* Common CSS End */
+
+/* Animation CSS */
+.animation_itemwrapper{
+    display:block;
+    width:640px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.animation_itemtitle{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:1.2em;
+}
+.animation_itemdescription{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:1.1em;
+}
+.processwork_button{
+    width:300px;
+    height:50px;
+    margin-bottom:30px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}
+.mobile.animation_itemwrapper{
+    width:90%;
+}
+.mobile .animation_itemtitle{
+    font-size:2.0em;
+}
+.mobile .animation_itemdescription{
+    font-size:1.5em;
+}
+.mobile .processwork_button{
+    width:400px;
+    height:100px;
+    line-height:100px;
+    font-size:1.7em;
+    text-align:center;
+}
+/* Animation CSS End */
+
+
+/* Contact CSS */
+
 .div_contact{
     width:100%;
     height:100%;
@@ -306,8 +359,6 @@ body {
     line-height: 40px;
     float:left;
 }
-
-
 div#main{
 width: 830px;
 height: 650px;
@@ -369,7 +420,9 @@ font-weight: bold;
 cursor: pointer;
 font-family: 'Ubuntu', sans-serif;
 }
+/* Contact CSS End*/
 
+/* Mobile Window */
 @media all and (max-width: 1200px) {
 
 
