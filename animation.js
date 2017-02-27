@@ -67,12 +67,12 @@ function addAnimationPage(div_parent) {
         var item_wrappers = document.getElementsByClassName("animation_itemwrapper");
         var videos = document.getElementsByClassName("animation_itemvideo");
         if (document.body.offsetWidth > 1200) {//Desktop View
-            for (let i = 0; i < item_wrappers.length; i++) {
+            for (var i = 0; i < item_wrappers.length; i++) {
                 item_wrappers[i].classList.toggle("mobile", false);
                 videos[i].width = "640";
             }
         } else {//Mobile View            
-            for (let i = 0; i < item_wrappers.length; i++) {
+            for (var i = 0; i < item_wrappers.length; i++) {
                 item_wrappers[i].classList.toggle("mobile", true);
                 videos[i].width = String(div_parent.offsetWidth * 0.9);
             }
@@ -92,7 +92,7 @@ function addAnimationPage(div_parent) {
 
 
         for (var i = 0; i < items.length; i++) {
-            let item = items[i];
+            var item = items[i];
 
             var div_itemwrapper = document.createElement("DIV");
             div_itemwrapper.className = "animation_itemwrapper";
@@ -106,14 +106,13 @@ function addAnimationPage(div_parent) {
             var video_item = document.createElement("VIDEO");
             video_item.className = "animation_itemvideo";
             video_item.setAttribute("controls", true);
-            video_item.preload = "auto";
             video_item.width = "640";
             var source_item = document.createElement("SOURCE");
             source_item.src = item.titlesrc;
             source_item.type = item.type;
             video_item.appendChild(source_item);
-            div_itemwrapper.appendChild(video_item);
             video_item.load();
+            div_itemwrapper.appendChild(video_item);            
             //Description
             var div_description = document.createElement("DIV");
             div_description.className = "animation_itemdescription";

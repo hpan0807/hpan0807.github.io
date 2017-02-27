@@ -192,7 +192,7 @@ function util_createItemPopup (target_item) {
     var img_fakework = document.createElement("IMG");
     img_fakework.id = "popup_mainwork";
     div_mainworkframe.appendChild(img_fakework);
-    let mainwork_index = 0;
+    var mainwork_index = 0;
     div_mainworkframe.replaceChild(createMainItem(detail_obj.works[mainwork_index].src, detail_obj.works[mainwork_index].type), img_fakework);
 
     var div_rightarrow = document.createElement("DIV");
@@ -285,9 +285,9 @@ function handlePopupMainItem(element) {
 }
 
 function handlePopupMainImage(imgelement) {    
-    let aspect_ratio = imgelement.RealHeight / imgelement.RealWidth; // height / width
-    let width1 = document.getElementById("popup_overlay").offsetHeight*0.82 / imgelement.offsetHeight * imgelement.offsetWidth + arrow_size*2 + arrow_margin*4;
-    let width2 = document.getElementById("popup_overlay").offsetWidth;
+    var aspect_ratio = imgelement.RealHeight / imgelement.RealWidth; // height / width
+    var width1 = document.getElementById("popup_overlay").offsetHeight*0.82 / imgelement.offsetHeight * imgelement.offsetWidth + arrow_size*2 + arrow_margin*4;
+    var width2 = document.getElementById("popup_overlay").offsetWidth;
     console.log("Updating Popup : "+width1 +", "+width2);
     if (width1 < width2) {//Desktop View
         if (imgelement.ViewMode == "mobile" || typeof imgelement.ViewMode == "undefined") {
@@ -310,7 +310,7 @@ function handlePopupMainVideo(video_element) {
     if (document.getElementById("popup_overlay").offsetWidth > 1200) {//Desktop
         video_element.width = 640;
     } else {//Mobile
-        let buttonmargins = arrow_size * 2 + arrow_margin * 4;
+        var buttonmargins = arrow_size * 2 + arrow_margin * 4;
         video_element.width = document.getElementById("popup_overlay").offsetWidth - buttonmargins;
     }
 }
