@@ -11,7 +11,6 @@ var AnimationList2016 = [
         description: "My first collaboration animation with Tan Nei Choi.",
         works: [{ name: 'Poster', src: 'animation/EggWitch/EggWitch.png', type: 'image' }, { name: 'Poster', src: 'animation/EggWitch/EggWitch2.jpg', type: 'image' }]
     },
-<<<<<<< HEAD
      {
          title: "Don't Pull!",
          titlesrc: "animation/donple/DontPull.mp4",
@@ -25,8 +24,7 @@ var AnimationList2016 = [
           type: "video/mp4",
           description: "My first photography stop motion animation",
           works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
-      }
-=======
+      },
     {
         title: "Don't Pull!",
         titlesrc: "animation/donple/DontPull.mp4",
@@ -55,7 +53,6 @@ var AnimationList2016 = [
         description: "My first animation using photography",
         works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
     }
->>>>>>> b04c749f91573447efffc95e9e0af920f65d4e83
 ];
 
 var AnimationList2015 = [
