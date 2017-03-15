@@ -189,13 +189,11 @@ function util_createItemPopup (target_item) {
         " float:left; align-self:center; margin-right:"+arrow_margin+"px; visibility:hidden; opacity: 0.3;");
     div_mainworkframe.appendChild(div_leftarrow);
 
-    var img_mainwork = document.createElement("IMG");
-    img_mainwork.id = "popup_mainwork";
-    img_mainwork.setAttribute("style", "float:left; align-self:center; max-width:100%; max-height: 100%; height: auto; width: auto;");
-    let mainwork_index = 0;
-    let img_ratio = setImageByAspectRatio(img_mainwork, detail_obj.works[mainwork_index].src);
-    img_mainwork.src = detail_obj.works[mainwork_index].src;
-    div_mainworkframe.appendChild(img_mainwork);
+    var img_fakework = document.createElement("IMG");
+    img_fakework.id = "popup_mainwork";
+    div_mainworkframe.appendChild(img_fakework);
+    var mainwork_index = 0;
+    div_mainworkframe.replaceChild(createMainItem(detail_obj.works[mainwork_index].src, detail_obj.works[mainwork_index].type), img_fakework);
 
     var div_rightarrow = document.createElement("DIV");
     div_rightarrow.className = "button";
@@ -212,7 +210,7 @@ function util_createItemPopup (target_item) {
 
     function onArrowClick(event) {
         mainwork_index += this.AddIndex;
-        setImageByAspectRatio(img_mainwork, detail_obj.works[mainwork_index].src);
+        div_mainworkframe.replaceChild(createMainItem(detail_obj.works[mainwork_index].src, detail_obj.works[mainwork_index].type), document.getElementById("popup_mainwork"));
         if (mainwork_index == 0) {
             div_leftarrow.style.visibility = "hidden";
             if (detail_obj.works.length == 1) div_rightarrow.style.visibility = "hidden";
@@ -226,15 +224,15 @@ function util_createItemPopup (target_item) {
         }
     }
 
-    function setImageByAspectRatio(imgelement, imgsrc) {
+    function setImageByAspectRatio(img_element, imgsrc) {
         div_mainworkframe.style.visibility = "hidden";
         div_mainworkframe.classList.toggle("fadeIn", false);
         var img = new Image();
         img.onload = function () {
-            imgelement.src = imgsrc;
-            imgelement.RealWidth = img.width;
-            imgelement.RealHeight = img.height;
-            handlePopupMainImage(imgelement);
+            img_element.src = imgsrc;
+            img_element.RealWidth = img.width;
+            img_element.RealHeight = img.height;
+            handlePopupMainImage(img_element);
             handlePopupSizes();
             div_mainworkframe.classList.toggle("fadeIn", true);
             div_mainworkframe.style.visibility = "visible";
@@ -242,37 +240,54 @@ function util_createItemPopup (target_item) {
         img.src = imgsrc;
     }
 
+    function setVideoByScreenSize(video_element) {
+        div_mainworkframe.style.visibility = "hidden";
+        div_mainworkframe.classList.toggle("fadeIn", false);
+        video_element.addEventListener("canplaythrough", function () {
+            handlePopupMainVideo(video_element);//Sets Video Size according to Screen Size
+            handlePopupSizes();
+            div_mainworkframe.classList.toggle("fadeIn", true);
+            div_mainworkframe.style.visibility = "visible";
+        }, false)
+        video_element.load();
+    }
 
-    function createMainItem(parent, name, src, type){
+    function createMainItem(src, type){
         if (type == "image"){
-            var img_picture = document.createElement("IMG");
-            img_picture.setAttribute("style","width:100%");
-            img_picture.src = src;
-            parent.appendChild(img_picture);
-            var div_title = document.createElement("DIV");
-            div_title.innerText = name;
-            div_title.setAttribute("style", "margin-top:0px; margin-bottom:60px; font-size: 0.8em; color: rgb(50, 134, 144); font-family: 'Open Sans', sans-serif; font-weight: 400;");
-            parent.appendChild(div_title);
-        }else if (type == "link"){
-            var div_frame = document.createElement("DIV");
-            div_frame.innerHTML = src;
-            parent.appendChild(div_frame.children[0]);
-            var div_title = document.createElement("DIV");
-            div_title.innerText = name;
-            div_title.setAttribute("style", "margin-top:0px; margin-bottom:60px; font-size: 0.8em; color: rgb(50, 134, 144); font-family: 'Open Sans', sans-serif; font-weight: 400;");
-            parent.appendChild(div_title);
+            var img_mainwork = document.createElement("IMG");
+            img_mainwork.id = "popup_mainwork";
+            img_mainwork.setAttribute("style", "float:left; align-self:center; max-width:100%; max-height: 100%; height: auto; width: auto;");
+            setImageByAspectRatio(img_mainwork, src);
+            return img_mainwork;
+        }else if (type == "video/mp4") {
+            var video_mainwork = document.createElement("VIDEO");
+            video_mainwork.id = "popup_mainwork";
+            video_mainwork.className = "animation_itemvideo";
+            video_mainwork.setAttribute("controls", "controls");
+            video_mainwork.width = "640";
+            var source_mainwork = document.createElement("SOURCE");
+            source_mainwork.src = src;
+            source_mainwork.type = type;
+            video_mainwork.appendChild(source_mainwork);
+            setVideoByScreenSize(video_mainwork);            
+            return video_mainwork;
         }
     }
 
-    function createProcessItem(src){
+}
 
+function handlePopupMainItem(element) {
+    if (element.tagName == "IMG") {
+        handlePopupMainImage(element);
+    } else if (element.tagName == "VIDEO") {
+        handlePopupMainVideo(element);
     }
 }
 
 function handlePopupMainImage(imgelement) {    
-    let aspect_ratio = imgelement.RealHeight / imgelement.RealWidth; // height / width
-    let width1 = document.getElementById("popup_overlay").offsetHeight*0.82 / imgelement.offsetHeight * imgelement.offsetWidth + arrow_size*2 + arrow_margin*4;
-    let width2 = document.getElementById("popup_overlay").offsetWidth;
+    var aspect_ratio = imgelement.RealHeight / imgelement.RealWidth; // height / width
+    var width1 = document.getElementById("popup_overlay").offsetHeight*0.82 / imgelement.offsetHeight * imgelement.offsetWidth + arrow_size*2 + arrow_margin*4;
+    var width2 = document.getElementById("popup_overlay").offsetWidth;
     console.log("Updating Popup : "+width1 +", "+width2);
     if (width1 < width2) {//Desktop View
         if (imgelement.ViewMode == "mobile" || typeof imgelement.ViewMode == "undefined") {
@@ -288,6 +303,15 @@ function handlePopupMainImage(imgelement) {
         imgelement.style.width = "calc(100% - " + String(arrow_size * 2 + arrow_margin * 4) + "px)";
         imgelement.ViewMode = "mobile";
         
+    }
+}
+
+function handlePopupMainVideo(video_element) {
+    if (document.getElementById("popup_overlay").offsetWidth > 1200) {//Desktop
+        video_element.width = 640;
+    } else {//Mobile
+        var buttonmargins = arrow_size * 2 + arrow_margin * 4;
+        video_element.width = document.getElementById("popup_overlay").offsetWidth - buttonmargins;
     }
 }
 

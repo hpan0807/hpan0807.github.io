@@ -407,7 +407,7 @@ function addGraphicDesignPage(div_parent) {
                 var ItemsPerRow = 1;
 
                 console.log(ItemsPerRow);
-                let itemsize = document.body.offsetWidth*0.7;
+                var itemsize = document.body.offsetWidth*0.7;
                 div_items.style.marginLeft = Math.max(((document.body.offsetWidth - itemsize-60)/2), 0)+"px";
                 addGraphicItems(div_items, ItemsPerRow,itemsize+ "px","height:"+itemsize+"px;");
                 div_items.ItemsPerRow = ItemsPerRow;
@@ -417,7 +417,7 @@ function addGraphicDesignPage(div_parent) {
 
 
         if (document.getElementById("popup_overlay")) {//If there is a popup, update mainwork image resizing
-            handlePopupMainImage(document.getElementById("popup_mainwork"));
+            handlePopupMainItem(document.getElementById("popup_mainwork"));
             handlePopupSizes();
         }
     }
