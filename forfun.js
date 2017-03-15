@@ -3,7 +3,12 @@
  */
 
 var ForfunList = [
-
+    {
+        title: "Cartoon named What's Up, US!",
+        titlesrc: "sketches/Wassup.png",
+        type:"pos",
+        works: [{ name: 'Poster', src: 'sketches/Wassup.png', type: 'image' },{ name: 'Poster', src: 'sketches/Wassup2.jpg', type: 'image' },{ name: 'Poster', src: 'sketches/Wassup3.jpg', type: 'image' }]
+    },
     {
         title: "Fun doodle",
         titlesrc: "sketches/title1.png",

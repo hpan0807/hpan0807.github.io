@@ -8,7 +8,7 @@ var AnimationList2016 = [
         title: "An Egg and a Witch",
         titlesrc: "animation/EggWitch/EggWitch.mp4",
         type: "video/mp4",
-        description: "My first collaboration animation with Tan Nei Choi",
+        description: "My first collaboration animation with Tan Nei Choi.",
         works: [{ name: 'Poster', src: 'animation/EggWitch/EggWitch.png', type: 'image' }, { name: 'Poster', src: 'animation/EggWitch/EggWitch2.jpg', type: 'image' }]
     },
      {
@@ -22,7 +22,7 @@ var AnimationList2016 = [
           title: "Butterfly Lands on a Girl",
           titlesrc: "animation/PhotographyAnimation.mp4",
           type: "video/mp4",
-          description: "My first animation using photography",
+          description: "My first photography stop motion animation",
           works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
       }
 ];

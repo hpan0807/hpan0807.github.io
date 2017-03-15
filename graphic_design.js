@@ -18,15 +18,7 @@ var GraphicDesignJsonList2015 = [
         type:"pos",
         works: [{ name: 'Poster', src: '2015/misa/MISAFeast1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast4.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast5.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast6.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast7.png', type: 'image' }]
     },
-    {
-        title: "Monogram Calendar (Typography)",
-        titlesrc: "2015titles/03log.png",
-        type:"log",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/Calendar.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar3.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar1.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar2.png', type: 'image' }]
-    },
+
     {
         title: "MISA Halloween Horror (Poster, Fb cover photo)",
         titlesrc: "2015titles/08pos.png",
@@ -64,6 +56,23 @@ var GraphicDesignJsonList2015 = [
         works: [{ name: 'Poster', src: '2015/misa/MISABazaar1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar3.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar4.png', type: 'image' }]
     },
     {
+        title: "MISA International Career Symposium (Poster)",
+        titlesrc: "2015titles/10pos.png",
+        type:"pos",
+        description: {},
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISASymposium.png', type: 'image' }]
+    },
+    {
+        title: "Monogram Calendar (Typography)",
+        titlesrc: "2015titles/03log.png",
+        type:"log",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/Calendar.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar3.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar1.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar2.png', type: 'image' }]
+    },
+    {
         title: "Marker StartUp Logo (Logo and app icon)",
         titlesrc: "2015titles/01log.png",
         type:"log",
@@ -82,14 +91,7 @@ var GraphicDesignJsonList2015 = [
         works: [{ name: 'Poster', src: '2015/KSALogo.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess1.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess2.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess3.jpg', type: 'image' }]
     },
 
-    {
-        title: "MISA International Career Symposium (Poster)",
-        titlesrc: "2015titles/10pos.png",
-        type:"pos",
-        description: {},
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISASymposium.png', type: 'image' }]
-    },
+
     {
         title: "KSA Korean New Year (Poster, FB Cover Photo and Profile Picture)",
         titlesrc: "2015titles/12pos.jpg",
@@ -144,17 +146,6 @@ var GraphicDesignJsonList2015 = [
 
 var GraphicDesignJsonList2016 = [
 
-    {
-        title: "TedxUMN Advertisement (Poster)",
-        titlesrc: "2016titles/04pos.png",
-        type:"pos",
-        description: {
-            text: "A poster for TedxUMN social media. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
-            src: ''//logo below text
-        },
-        processwork: ['2016/TedX/TedXFlyerProcess.png'],
-        works: [{ name: 'Poster', src: '2016/TedX/TedXFlyer1.png', type: 'image' }, { name: 'Poster', src: '2016/TedX/TedXFlyerProcess.png', type: 'image' }]
-    },
 
     {
         title: "TedxUMN REAWAKEN Event Promotion Poster (2 Posters)",
@@ -200,7 +191,17 @@ var GraphicDesignJsonList2016 = [
         processwork: ['2016/TedX/TedXFlyer5Process'],
         works: [{ name: 'For Facebook', src: '2016/TedX/TedXFlyer5.png', type: 'image' }, { name: 'For Instagram', src: '2016/TedX/TedXFlyer51.png', type: 'image' }]
     },
-
+    {
+        title: "TedxUMN Advertisement (Poster)",
+        titlesrc: "2016titles/04pos.png",
+        type:"pos",
+        description: {
+            text: "A poster for TedxUMN social media. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
+            src: ''//logo below text
+        },
+        processwork: ['2016/TedX/TedXFlyerProcess.png'],
+        works: [{ name: 'Poster', src: '2016/TedX/TedXFlyer1.png', type: 'image' }, { name: 'Poster', src: '2016/TedX/TedXFlyerProcess.png', type: 'image' }]
+    },
     {
         title: "TypeCon2015 Book Design (Cover and Book Interior Design, Typography Application",
         titlesrc: "2016titles/18boo.png",
@@ -236,8 +237,32 @@ var GraphicDesignJsonList2016 = [
         processwork: ['2016/VPlannerProcess1.png', '2016/VPlannerProcess2.jpg', '2016/VPlannerProcess3.png', '2016/VPlannerProcess4.png', '2016/VPlannerProcess5.png'],
         works: [{src: '2016/VPlanner9.jpg', type: 'image' },{src: '2016/VPlanner.png', type: 'image' },{src: '2016/VPlanner5.png', type: 'image' },{src: '2016/VPlanner2.png', type: 'image' },{src: '2016/VPlanner3.png', type: 'image' },{src: '2016/VPlanner4.png', type: 'image' },{src: '2016/VPlanner6.png', type: 'image' },{src: '2016/VPlanner7.jpg', type: 'image' },{src: '2016/VPlanner8.jpg', type: 'image' }]
     },
-
     {
+        title: "3M Poster for Reflective Tape (See & Be Seen) Campaign",
+        titlesrc: "2016titles/21pos.png",
+        type:"pos",
+        works: [{src: '2016/3M.png', type: 'image' }]
+
+    },
+    {
+        title: "AIGA Medalist Seymour Chwast inspired poster (Oil Spills)",
+        titlesrc: "2016titles/23pos.png",
+        type:"ill",
+        works: [{src: '2016/OilSpill.png', type: 'image' }]
+    },
+    {
+        title: "AIGA Medalist Seymour Chwast inspired poster (Child obesity)",
+        titlesrc: "2016titles/22pos.png",
+        type:"ill",
+        works: [{src: '2016/StopChildObesity.png', type: 'image' }]
+    },
+    {
+        title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
+        titlesrc: "2016titles/10ill.jpg",
+        type:"ill",
+        works: [{src: '2016/Illustration.jpg', type: 'image' }]
+    },
+  /*  {
         title: "IBP Scavenger Hunt (Flyer, Facebook profile picture)",
         titlesrc: "2016titles/14pos.png",
         type:"pos",
@@ -249,7 +274,7 @@ var GraphicDesignJsonList2016 = [
         works: [{ name: 'Poster', src: '2016/IBP/IBPScavengerHunt.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPScavengerHunt3.png', type: 'image' }]
     },
 
-
+*/
     {
         title: "IBP T-Shirt Design (Front design, photographs)",
         titlesrc: "2016titles/12tsh.png",
@@ -263,7 +288,7 @@ var GraphicDesignJsonList2016 = [
         works: [{ name: 'T-Shirt Design Front', src: '2016/IBP/IBPShirts.png', type: 'image' }, { name: 'T-Shirt Design Front Photography', src: '2016/IBP/IBPShirts2.jpg', type: 'image' }, { name: 'T-Shirt Design Back Photography', src: '2016/IBP/IBPShirts3.jpg', type: 'image' }]
     },
 
-    {
+  /*  {
         title: "IBP Welcome Party (Flyer, Facebook cover photo and profile picture)",
         titlesrc: "2016titles/15pos.png",
         type:"pos",
@@ -274,7 +299,7 @@ var GraphicDesignJsonList2016 = [
         },
         works: [{ name: 'Poster', src: '2016/IBP/IBPWelcomeParty1.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPWelcomeParty2.png', type: 'image' }]
     },
-
+*/
     {
         title: "Fizz Bee Product Design (A Fruit Beer Custom Product Design)",
         titlesrc: "2016titles/11pro.png",
