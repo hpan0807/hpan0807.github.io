@@ -361,14 +361,21 @@ function addGraphicDesignPage(div_parent) {
 
     var div_dropdownarrow = document.createElement("DIV");
     div_dropdownarrow.className = "DropDownArrow";
+    div_dropdownarrow.onclick = function (event) {        
+        var div_menulist = document.getElementById("menu_window");
+        if (div_menulist) {
+            event.stopPropagation();
+            div_menulist.parentElement.removeChild(div_menulist);
+        }
+    }
     div_sortmenuoptionbox.appendChild(div_dropdownarrow);
 
     /* Drop down menu */
     div_sortmenuoptionbox.onclick = function(event){
 
         if (!document.getElementById("menu_window")){
-            var sort_data = ["all","pos","log","oth"];
-            var sort_str = ["All","Posters","Logos","Others"];
+            var sort_data = ["all", "pos", "log", "boo", "ill", "int","oth"];
+            var sort_str = ["All","Flyers/Posters","Logos","Books","Illustration","Interactive Design","Others"];
 
             var div_dropdownmenu = util_createExpandingOverlayMenu(this, sort_data, sort_str, 4, onGraphicDesignMenuClick);
             this.parentElement.appendChild(div_dropdownmenu);
@@ -437,16 +444,9 @@ function addGraphicDesignPage(div_parent) {
                 var gl_dir = gl_json.titlesrc;
                 if (!gl_dir) break;
 
-                if (targetstr == "oth"){
-                    if (gl_dir.indexOf("pos")!=-1 || gl_dir.indexOf("log")!=-1){
-                        i--;
-                        continue;
-                    }
-                }else if (targetstr == "pos" || targetstr == "log"){
-                    if (gl_dir.indexOf(targetstr)==-1){
-                        i--;
-                        continue;
-                    }
+                if (gl_dir.indexOf(targetstr) == -1 && targetstr != "all") {
+                    i--;
+                    continue;
                 }
 
                 var div_works = document.createElement("DIV");
