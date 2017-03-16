@@ -25,34 +25,7 @@ var AnimationList2016 = [
           description: "My first photography stop motion animation",
           works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
       },
-    {
-        title: "Don't Pull!",
-        titlesrc: "animation/donple/DontPull.mp4",
-        type: "video/mp4",
-        description: "",
-        works: [{ name: 'Poster', src: 'animation/donple/DontPull1.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull2.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull3.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull4.png', type: 'image' }]
-    },
-    {
-        title: "Butterfly Lands on a Girl",
-        titlesrc: "animation/PhotographyAnimation.mp4",
-        type: "video/mp4",
-        description: "My first photography stop motion animation",
-        works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
-    },
-    {
-        title: "Don't Pull!",
-        titlesrc: "animation/donple/DontPull.mp4",
-        type: "video/mp4",
-        description: "",
-        works: [{ name: 'Poster', src: 'animation/donple/DontPull1.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull2.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull3.png', type: 'image' }, { name: 'Poster', src: 'animation/donple/DontPull4.png', type: 'image' }]
-    },
-    {
-        title: "Butterfly Lands on a Girl",
-        titlesrc: "animation/PhotographyAnimation.mp4",
-        type: "video/mp4",
-        description: "My first animation using photography",
-        works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
-    }
+  
 ];
 
 var AnimationList2015 = [
