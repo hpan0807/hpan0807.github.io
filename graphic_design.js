@@ -66,7 +66,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "Monogram Calendar (Typography)",
         titlesrc: "2015titles/03log.png",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -75,7 +75,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "Marker StartUp Logo (Logo and app icon)",
         titlesrc: "2015titles/01log.png",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -84,7 +84,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "KSA Logo (Logo and Process)",
         titlesrc: "2015titles/02log.jpg",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -103,7 +103,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "Ddeokbokki Nara Restaurant Menu Brochure",
         titlesrc: "2015titles/13bro.png",
-        type:"bro",
+        type:"oth",
         description: {},
         processwork: [],
         works: [{ name: 'Poster', src: '2015/Brochure.png', type: 'image' }]
@@ -111,7 +111,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "The Peacock and the Crane (Limited color palette and tone study)",
         titlesrc: "2015titles/14fai.png",
-        type:"fai",
+        type:"ill",
         description: {},
         processwork: ['2015/FableProcess.png'],
         works: [{ name: 'Poster', src: '2015/Fable.png', type: 'image' }]
@@ -120,7 +120,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "MISA mascot (Po)",
         titlesrc: "2015titles/15cha.png",
-        type:"cha",
+        type:"oth",
         description: {},
         processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
         works: [{ name: 'Poster', src: '2015/misa/MISAMascot1.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAMascot2.png', type: 'image' }]
@@ -128,7 +128,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "MISA T-shirt Designs",
         titlesrc: "2015titles/16tsh.png",
-        type:"tsh",
+        type:"ill",
         description: {},
         processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
         works: [{ name: 'Poster', src: '2015/misa/MISATshirt.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt2.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt3.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt4.jpg', type: 'image' }]
@@ -223,7 +223,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "Gulliever's Travels Book Cover Design",
         titlesrc: "2016titles/16boo.png",
-        type:"pos",
+        type:"boo",
         description: {
 
         },
@@ -233,7 +233,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "V Planner Logo (Website Design, Business Card Designs, Letter Head Design, Advertisement Mock-Ups)",
         titlesrc: "2016titles/01log.png",
-        type:"log",
+        type:"int",
         processwork: ['2016/VPlannerProcess1.png', '2016/VPlannerProcess2.jpg', '2016/VPlannerProcess3.png', '2016/VPlannerProcess4.png', '2016/VPlannerProcess5.png'],
         works: [{src: '2016/VPlanner9.jpg', type: 'image' },{src: '2016/VPlanner.png', type: 'image' },{src: '2016/VPlanner5.png', type: 'image' },{src: '2016/VPlanner2.png', type: 'image' },{src: '2016/VPlanner3.png', type: 'image' },{src: '2016/VPlanner4.png', type: 'image' },{src: '2016/VPlanner6.png', type: 'image' },{src: '2016/VPlanner7.jpg', type: 'image' },{src: '2016/VPlanner8.jpg', type: 'image' }]
     },
@@ -278,7 +278,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "IBP T-Shirt Design (Front design, photographs)",
         titlesrc: "2016titles/12tsh.png",
-        type:"tsh",
+        type:"oth",
         description: {
             text: "T-shirt design for International Buddy Program(IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
             "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
@@ -303,7 +303,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "Fizz Bee Product Design (A Fruit Beer Custom Product Design)",
         titlesrc: "2016titles/11pro.png",
-        type:"pro",
+        type:"oth",
         description: {
         },
         processwork: ['2016/FizzBeeProcess.jpg'],
@@ -321,7 +321,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "Cereal Box Redesign Project",
         titlesrc: "2016titles/19pos.png",
-        type:"pos",
+        type:"oth",
         description: {},
         works: [{ name: 'Poster', src: '2016/Redesign1.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign2.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign3.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign4.png', type: 'image' }]
     }
@@ -374,8 +374,8 @@ function addGraphicDesignPage(div_parent) {
     div_sortmenuoptionbox.onclick = function(event){
 
         if (!document.getElementById("menu_window")){
-            var sort_data = ["all", "pos", "log", "boo", "ill", "int","oth"];
-            var sort_str = ["All","Flyers/Posters","Logos","Books","Illustration","Interactive Design","Others"];
+            var sort_data = ["all", "pos", "ill", "boo", "int","oth"];
+            var sort_str = ["All","Flyers/Posters","Illustration","Books","Interactive Design","Others"];
 
             var div_dropdownmenu = util_createExpandingOverlayMenu(this, sort_data, sort_str, 4, onGraphicDesignMenuClick);
             this.parentElement.appendChild(div_dropdownmenu);
