@@ -66,7 +66,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "Monogram Calendar (Typography)",
         titlesrc: "2015titles/03log.png",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -75,7 +75,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "Marker StartUp Logo (Logo and app icon)",
         titlesrc: "2015titles/01log.png",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -84,7 +84,7 @@ var GraphicDesignJsonList2015 = [
     {
         title: "KSA Logo (Logo and Process)",
         titlesrc: "2015titles/02log.jpg",
-        type:"log",
+        type:"oth",
         description: {
         },
         processwork: [],
@@ -223,7 +223,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "Gulliever's Travels Book Cover Design",
         titlesrc: "2016titles/16boo.png",
-        type:"pos",
+        type:"boo",
         description: {
 
         },
@@ -374,8 +374,8 @@ function addGraphicDesignPage(div_parent) {
     div_sortmenuoptionbox.onclick = function(event){
 
         if (!document.getElementById("menu_window")){
-            var sort_data = ["all", "pos", "log", "boo", "ill", "int","oth"];
-            var sort_str = ["All","Flyers/Posters","Logos","Books","Illustration","Interactive Design","Others"];
+            var sort_data = ["all", "pos", "ill", "boo", "int","oth"];
+            var sort_str = ["All","Flyers/Posters","Illustration","Books","Interactive Design","Others"];
 
             var div_dropdownmenu = util_createExpandingOverlayMenu(this, sort_data, sort_str, 4, onGraphicDesignMenuClick);
             this.parentElement.appendChild(div_dropdownmenu);
