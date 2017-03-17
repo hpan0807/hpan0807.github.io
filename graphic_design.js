@@ -442,9 +442,10 @@ function addGraphicDesignPage(div_parent) {
             for (var i = 0; (i < i_perrow) && graphiclist_clone.length>0; i++) {
                 var gl_json = graphiclist_clone.shift();
                 var gl_dir = gl_json.titlesrc;
+                var gl_type = gl_json.type;
                 if (!gl_dir) break;
 
-                if (gl_dir.indexOf(targetstr) == -1 && targetstr != "all") {
+                if (gl_type.indexOf(targetstr) == -1 && targetstr != "all") {
                     i--;
                     continue;
                 }
