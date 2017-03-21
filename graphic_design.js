@@ -146,7 +146,6 @@ var GraphicDesignJsonList2015 = [
 
 var GraphicDesignJsonList2016 = [
 
-
     {
         title: "TedxUMN REAWAKEN Event Promotion Poster (2 Posters)",
         titlesrc: "2016titles/02pos.png",
@@ -256,25 +255,20 @@ var GraphicDesignJsonList2016 = [
         type:"ill",
         works: [{src: '2016/StopChildObesity.png', type: 'image' }]
     },
-    {
-        title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
-        titlesrc: "2016titles/10ill.jpg",
-        type:"ill",
-        works: [{src: '2016/Illustration.jpg', type: 'image' }]
-    },
-  /*  {
-        title: "IBP Scavenger Hunt (Flyer, Facebook profile picture)",
-        titlesrc: "2016titles/14pos.png",
-        type:"pos",
-        description: {
-            text: "Advertisement for IBP Scavenger Hunt event of International Buddy Program (IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
-            "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
-            src: ''//logo below text
-        },
-        works: [{ name: 'Poster', src: '2016/IBP/IBPScavengerHunt.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPScavengerHunt3.png', type: 'image' }]
-    },
 
-*/
+    /*  {
+     title: "IBP Scavenger Hunt (Flyer, Facebook profile picture)",
+     titlesrc: "2016titles/14pos.png",
+     type:"pos",
+     description: {
+     text: "Advertisement for IBP Scavenger Hunt event of International Buddy Program (IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
+     "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
+     src: ''//logo below text
+     },
+     works: [{ name: 'Poster', src: '2016/IBP/IBPScavengerHunt.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPScavengerHunt3.png', type: 'image' }]
+     },
+
+     */
     {
         title: "IBP T-Shirt Design (Front design, photographs)",
         titlesrc: "2016titles/12tsh.png",
@@ -288,18 +282,18 @@ var GraphicDesignJsonList2016 = [
         works: [{ name: 'T-Shirt Design Front', src: '2016/IBP/IBPShirts.png', type: 'image' }, { name: 'T-Shirt Design Front Photography', src: '2016/IBP/IBPShirts2.jpg', type: 'image' }, { name: 'T-Shirt Design Back Photography', src: '2016/IBP/IBPShirts3.jpg', type: 'image' }]
     },
 
-  /*  {
-        title: "IBP Welcome Party (Flyer, Facebook cover photo and profile picture)",
-        titlesrc: "2016titles/15pos.png",
-        type:"pos",
-        description: {
-            text: "Advertisement for IBP Welcome Party event of International Buddy Program (IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
-            "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
-            src: ''//logo below text
-        },
-        works: [{ name: 'Poster', src: '2016/IBP/IBPWelcomeParty1.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPWelcomeParty2.png', type: 'image' }]
-    },
-*/
+    /*  {
+     title: "IBP Welcome Party (Flyer, Facebook cover photo and profile picture)",
+     titlesrc: "2016titles/15pos.png",
+     type:"pos",
+     description: {
+     text: "Advertisement for IBP Welcome Party event of International Buddy Program (IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
+     "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
+     src: ''//logo below text
+     },
+     works: [{ name: 'Poster', src: '2016/IBP/IBPWelcomeParty1.png', type: 'image' }, { name: 'Facebook Profile Picture', src: '2016/IBP/IBPWelcomeParty2.png', type: 'image' }]
+     },
+     */
     {
         title: "Fizz Bee Product Design (A Fruit Beer Custom Product Design)",
         titlesrc: "2016titles/11pro.png",
@@ -325,6 +319,21 @@ var GraphicDesignJsonList2016 = [
         description: {},
         works: [{ name: 'Poster', src: '2016/Redesign1.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign2.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign3.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign4.png', type: 'image' }]
     }
+];
+
+var GraphicDesignJsonList2017 = [
+        {
+            title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
+            titlesrc: "2016titles/10ill.jpg",
+            type:"ill",
+            works: [{src: '2016/Illustration.jpg', type: 'image' }]
+        },
+       {
+           title: "Northern Myotis Bat (Spot Illustration) using colored pencil",
+           titlesrc: "2016titles/BatTitle.png",
+           type: "ill",
+           works: [{src: '2016/Bat.png', type: 'image'}]
+       }
 
 
 ];
@@ -385,8 +394,8 @@ function addGraphicDesignPage(div_parent) {
     /* ================= Adding Items ====================== */
     var ItemDivArray = [];
     window.onresize = graphic_onWindowResize;
-    
 
+    addItemsForYear(2017, GraphicDesignJsonList2017);
     addItemsForYear(2016, GraphicDesignJsonList2016);
     addItemsForYear(2015, GraphicDesignJsonList2015);
 
