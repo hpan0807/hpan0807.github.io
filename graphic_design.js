@@ -490,6 +490,9 @@ function addGraphicDesignPage(div_parent) {
         var div_line = document.createElement("DIV");
         div_line.setAttribute("style","height:3px; width: 60%; background-color: rgb(10, 46, 50); margin-bottom: 60px; margin-left: auto; margin-right: auto; opacity: 0.1;");
         div_parent.appendChild(div_line);
+
+        div_subparent1.DIV_YEAR = div_year;
+        div_subparent1.DIV_LINE = div_line;
     }
 
     function onGraphicDesignMenuClick(){
@@ -498,6 +501,17 @@ function addGraphicDesignPage(div_parent) {
             div_items.ItemsPerRow = null;
         }
         graphic_onWindowResize();
+
+        for (var i = 0; i < ItemDivArray.length ; i++) {
+            var div_items = ItemDivArray[i];
+            if (div_items.children.length == 0) {
+                div_items.DIV_YEAR.style.display = "none";
+                div_items.DIV_LINE.style.display = "none";
+            } else {
+                div_items.DIV_YEAR.style.display = "";
+                div_items.DIV_LINE.style.display = "";
+            }
+        }        
     }
 
 
