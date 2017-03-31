@@ -6,140 +6,7 @@
 
 var GraphicDesignJsonList = [
 
-    {
-        title: "MISA International Picnic Event (Poster, Coffman screen advertisement, Instagram poster)",
-        titlesrc: "2015titles/06pos.jpg",
-        type:"pos",
-        works: [{ name: 'Poster', src: '2015/misa/MISAIP1.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAIP2.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAIP3.jpg', type: 'image' }]
-    },
-    {
-        title: "MISA Feast of Nations (Poster, Fb cover photo, Audition fb promo, Itinerary(front and back), Passport design)",
-        titlesrc: "2015titles/05pos.png",
-        type:"pos",
-        works: [{ name: 'Poster', src: '2015/misa/MISAFeast1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast4.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast5.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast6.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAFeast7.png', type: 'image' }]
-    },
-
-    {
-        title: "MISA Halloween Horror (Poster, Fb cover photo)",
-        titlesrc: "2015titles/08pos.png",
-        type:"pos",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISAHalloween1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAHalloween2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAHalloween3.png', type: 'image' }]
-    },
-    {
-        title: "MISA Be Po's Valentines (Poster, Fb cover photo, Fb profile picture)",
-        titlesrc: "2015titles/11pos.png",
-        type:"pos",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISAValentines1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAValentines2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAValentines3.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAValentines4.png', type: 'image' }]
-    },
-    {
-        title: "MISA Open House (Poster and FB Cover Photo)",
-        titlesrc: "2015titles/07pos.jpg",
-        type:"pos",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISAOpenHouse1.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAOpenHouse2.jpg', type: 'image' }]
-    },
-    {
-        title: "MISA International Bazaar (Poster, Fb cover photo, Fb profile picture, Coffman screen advertisement)",
-        titlesrc: "2015titles/04pos.png",
-        type:"pos",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISABazaar1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar3.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISABazaar4.png', type: 'image' }]
-    },
-    {
-        title: "MISA International Career Symposium (Poster)",
-        titlesrc: "2015titles/10pos.png",
-        type:"pos",
-        description: {},
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISASymposium.png', type: 'image' }]
-    },
-    {
-        title: "Monogram Calendar (Typography)",
-        titlesrc: "2015titles/03log.png",
-        type:"oth",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/Calendar.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar3.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar1.png', type: 'image' },{ name: 'Poster', src: '2015/Calendar2.png', type: 'image' }]
-    },
-    {
-        title: "Marker StartUp Logo (Logo and app icon)",
-        titlesrc: "2015titles/01log.png",
-        type:"oth",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/MarkerLogo.png', type: 'image' },{ name: 'Poster', src: '2015/MarkerLogo2.png', type: 'image' }]
-    },
-    {
-        title: "KSA Logo (Logo and Process)",
-        titlesrc: "2015titles/02log.jpg",
-        type:"oth",
-        description: {
-        },
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/KSALogo.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess1.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess2.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSALogoProcess3.jpg', type: 'image' }]
-    },
-
-
-    {
-        title: "KSA Korean New Year (Poster, FB Cover Photo and Profile Picture)",
-        titlesrc: "2015titles/12pos.jpg",
-        type:"pos",
-        description: {},
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/KSAKoreanNewYear.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSAKoreanNewYear2.jpg', type: 'image' },{ name: 'Poster', src: '2015/KSAKoreanNewYear3.jpg', type: 'image' }]
-    },
-    {
-        title: "Ddeokbokki Nara Restaurant Menu Brochure",
-        titlesrc: "2015titles/13bro.png",
-        type:"oth",
-        description: {},
-        processwork: [],
-        works: [{ name: 'Poster', src: '2015/Brochure.png', type: 'image' }]
-    },
-    {
-        title: "The Peacock and the Crane (Limited color palette and tone study)",
-        titlesrc: "2015titles/14fai.png",
-        type:"ill",
-        description: {},
-        processwork: ['2015/FableProcess.png'],
-        works: [{ name: 'Poster', src: '2015/Fable.png', type: 'image' }]
-    },
-
-    {
-        title: "MISA mascot (Po)",
-        titlesrc: "2015titles/15cha.png",
-        type:"oth",
-        description: {},
-        processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
-        works: [{ name: 'Poster', src: '2015/misa/MISAMascot1.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAMascot2.png', type: 'image' }]
-    },
-    {
-        title: "MISA T-shirt Designs",
-        titlesrc: "2015titles/16tsh.png",
-        type:"ill",
-        description: {},
-        processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
-        works: [{ name: 'Poster', src: '2015/misa/MISATshirt.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt2.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt3.jpg', type: 'image' },{ name: 'Poster', src: '2015/misa/MISATshirt4.jpg', type: 'image' }]
-    },
-    {
-        title: "Fashion, Sex, and Power Poster (Poster and Invitation Card)",
-        titlesrc: "2015titles/17pos.png",
-        type:"pos",
-        description: {},
-        works: [{ name: 'Poster', src: '2015/FasionPoster.png', type: 'image' },{ name: 'Poster', src: '2015/FashionPoster2.png', type: 'image' }]
-    },
+  
 
     {
         title: "TedxUMN REAWAKEN Event Promotion Poster (2 Posters)",
@@ -326,7 +193,141 @@ var GraphicDesignJsonList = [
         type: "oth",
         description: {},
         works: [{ name: 'Poster', src: '2016/Redesign1.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign2.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign3.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign4.png', type: 'image' }]
-    }
+    },
+      {
+          title: "MISA International Picnic Event (Poster, Coffman screen advertisement, Instagram poster)",
+          titlesrc: "2015titles/06pos.jpg",
+          type: "pos",
+          works: [{ name: 'Poster', src: '2015/misa/MISAIP1.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAIP2.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAIP3.jpg', type: 'image' }]
+      },
+    {
+        title: "MISA Feast of Nations (Poster, Fb cover photo, Audition fb promo, Itinerary(front and back), Passport design)",
+        titlesrc: "2015titles/05pos.png",
+        type: "pos",
+        works: [{ name: 'Poster', src: '2015/misa/MISAFeast1.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAFeast2.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAFeast4.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAFeast5.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAFeast6.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAFeast7.png', type: 'image' }]
+    },
+
+    {
+        title: "MISA Halloween Horror (Poster, Fb cover photo)",
+        titlesrc: "2015titles/08pos.png",
+        type: "pos",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISAHalloween1.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAHalloween2.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAHalloween3.png', type: 'image' }]
+    },
+    {
+        title: "MISA Be Po's Valentines (Poster, Fb cover photo, Fb profile picture)",
+        titlesrc: "2015titles/11pos.png",
+        type: "pos",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISAValentines1.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAValentines2.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAValentines3.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAValentines4.png', type: 'image' }]
+    },
+    {
+        title: "MISA Open House (Poster and FB Cover Photo)",
+        titlesrc: "2015titles/07pos.jpg",
+        type: "pos",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISAOpenHouse1.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAOpenHouse2.jpg', type: 'image' }]
+    },
+    {
+        title: "MISA International Bazaar (Poster, Fb cover photo, Fb profile picture, Coffman screen advertisement)",
+        titlesrc: "2015titles/04pos.png",
+        type: "pos",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISABazaar1.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISABazaar2.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISABazaar3.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISABazaar4.png', type: 'image' }]
+    },
+    {
+        title: "MISA International Career Symposium (Poster)",
+        titlesrc: "2015titles/10pos.png",
+        type: "pos",
+        description: {},
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/misa/MISASymposium.png', type: 'image' }]
+    },
+    {
+        title: "Monogram Calendar (Typography)",
+        titlesrc: "2015titles/03log.png",
+        type: "oth",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/Calendar.png', type: 'image' }, { name: 'Poster', src: '2015/Calendar3.png', type: 'image' }, { name: 'Poster', src: '2015/Calendar1.png', type: 'image' }, { name: 'Poster', src: '2015/Calendar2.png', type: 'image' }]
+    },
+    {
+        title: "Marker StartUp Logo (Logo and app icon)",
+        titlesrc: "2015titles/01log.png",
+        type: "oth",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/MarkerLogo.png', type: 'image' }, { name: 'Poster', src: '2015/MarkerLogo2.png', type: 'image' }]
+    },
+    {
+        title: "KSA Logo (Logo and Process)",
+        titlesrc: "2015titles/02log.jpg",
+        type: "oth",
+        description: {
+        },
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/KSALogo.jpg', type: 'image' }, { name: 'Poster', src: '2015/KSALogoProcess1.jpg', type: 'image' }, { name: 'Poster', src: '2015/KSALogoProcess2.jpg', type: 'image' }, { name: 'Poster', src: '2015/KSALogoProcess3.jpg', type: 'image' }]
+    },
+
+
+    {
+        title: "KSA Korean New Year (Poster, FB Cover Photo and Profile Picture)",
+        titlesrc: "2015titles/12pos.jpg",
+        type: "pos",
+        description: {},
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/KSAKoreanNewYear.jpg', type: 'image' }, { name: 'Poster', src: '2015/KSAKoreanNewYear2.jpg', type: 'image' }, { name: 'Poster', src: '2015/KSAKoreanNewYear3.jpg', type: 'image' }]
+    },
+    {
+        title: "Ddeokbokki Nara Restaurant Menu Brochure",
+        titlesrc: "2015titles/13bro.png",
+        type: "oth",
+        description: {},
+        processwork: [],
+        works: [{ name: 'Poster', src: '2015/Brochure.png', type: 'image' }]
+    },
+    {
+        title: "The Peacock and the Crane (Limited color palette and tone study)",
+        titlesrc: "2015titles/14fai.png",
+        type: "ill",
+        description: {},
+        processwork: ['2015/FableProcess.png'],
+        works: [{ name: 'Poster', src: '2015/Fable.png', type: 'image' }]
+    },
+
+    {
+        title: "MISA mascot (Po)",
+        titlesrc: "2015titles/15cha.png",
+        type: "oth",
+        description: {},
+        processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
+        works: [{ name: 'Poster', src: '2015/misa/MISAMascot1.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAMascot2.png', type: 'image' }]
+    },
+    {
+        title: "MISA T-shirt Designs",
+        titlesrc: "2015titles/16tsh.png",
+        type: "ill",
+        description: {},
+        processwork: ['2015/misa/MISAMascotProcess1.png', '2015/misa/MISAMascotProcess2.png'],
+        works: [{ name: 'Poster', src: '2015/misa/MISATshirt.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISATshirt2.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISATshirt3.jpg', type: 'image' }, { name: 'Poster', src: '2015/misa/MISATshirt4.jpg', type: 'image' }]
+    },
+    {
+        title: "Fashion, Sex, and Power Poster (Poster and Invitation Card)",
+        titlesrc: "2015titles/17pos.png",
+        type: "pos",
+        description: {},
+        works: [{ name: 'Poster', src: '2015/FasionPoster.png', type: 'image' }, { name: 'Poster', src: '2015/FashionPoster2.png', type: 'image' }]
+    },
 
 ];
 
