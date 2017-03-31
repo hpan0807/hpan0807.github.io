@@ -269,6 +269,19 @@ var GraphicDesignJsonList2016 = [
      },
 
      */
+        {
+            title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
+            titlesrc: "2016titles/10ill.jpg",
+            type:"ill",
+            works: [{src: '2016/Illustration.jpg', type: 'image' }]
+        },
+       {
+           title: "Northern Myotis Bat (Spot Illustration) using colored pencil",
+           titlesrc: "2016titles/BatTitle.png",
+           type: "ill",
+           works: [{src: '2016/Bat.png', type: 'image'}]
+       },
+
     {
         title: "IBP T-Shirt Design (Front design, photographs)",
         titlesrc: "2016titles/12tsh.png",
@@ -321,22 +334,7 @@ var GraphicDesignJsonList2016 = [
     }
 ];
 
-var GraphicDesignJsonList2017 = [
-        {
-            title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
-            titlesrc: "2016titles/10ill.jpg",
-            type:"ill",
-            works: [{src: '2016/Illustration.jpg', type: 'image' }]
-        },
-       {
-           title: "Northern Myotis Bat (Spot Illustration) using colored pencil",
-           titlesrc: "2016titles/BatTitle.png",
-           type: "ill",
-           works: [{src: '2016/Bat.png', type: 'image'}]
-       }
 
-
-];
 
 function addGraphicDesignPage(div_parent) {
 
@@ -395,7 +393,6 @@ function addGraphicDesignPage(div_parent) {
     var ItemDivArray = [];
     window.onresize = graphic_onWindowResize;
 
-    addItemsForYear(2017, GraphicDesignJsonList2017);
     addItemsForYear(2016, GraphicDesignJsonList2016);
     addItemsForYear(2015, GraphicDesignJsonList2015);
 
