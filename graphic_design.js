@@ -4,7 +4,7 @@
 
 
 
-var GraphicDesignJsonList2015 = [
+var GraphicDesignJsonList = [
 
     {
         title: "MISA International Picnic Event (Poster, Coffman screen advertisement, Instagram poster)",
@@ -139,17 +139,12 @@ var GraphicDesignJsonList2015 = [
         type:"pos",
         description: {},
         works: [{ name: 'Poster', src: '2015/FasionPoster.png', type: 'image' },{ name: 'Poster', src: '2015/FashionPoster2.png', type: 'image' }]
-    }
-
-];
-
-
-var GraphicDesignJsonList2016 = [
+    },
 
     {
         title: "TedxUMN REAWAKEN Event Promotion Poster (2 Posters)",
         titlesrc: "2016titles/02pos.png",
-        type:"pos",
+        type: "pos",
         description: {
             text: "Posters for TedxUMN event promotion. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
             src: ''//logo below text
@@ -160,7 +155,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "TedxUMN Advertisement (Poster)",
         titlesrc: "2016titles/06pos.png",
-        type:"pos",
+        type: "pos",
         description: {
             text: "A Halloween poster for TedxUMN social media. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
             src: ''//logo below text
@@ -171,7 +166,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "TedxUMN Flyer for REAWAKEN Event (Poster)",
         titlesrc: "2016titles/05pos.png",
-        type:"pos",
+        type: "pos",
         description: {
             text: "A poster for printing out to use for REAWAKEN TedxUMN event promotion. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
             src: ''//logo below text
@@ -182,7 +177,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "TedxUMN Social Media Advertisement (For Facebook and Instagram)",
         titlesrc: "2016titles/03pos.png",
-        type:"pos",
+        type: "pos",
         description: {
             text: "A poster for advertising TedxUMN social media <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
             src: ''//logo below text
@@ -193,7 +188,7 @@ var GraphicDesignJsonList2016 = [
     {
         title: "TedxUMN Advertisement (Poster)",
         titlesrc: "2016titles/04pos.png",
-        type:"pos",
+        type: "pos",
         description: {
             text: "A poster for TedxUMN social media. <a href='http://tedxumn.com/'>Click to visit TedxUMN website</a>",
             src: ''//logo below text
@@ -204,25 +199,25 @@ var GraphicDesignJsonList2016 = [
     {
         title: "TypeCon2015 Book Design (Cover and Book Interior Design, Typography Application",
         titlesrc: "2016titles/18boo.png",
-        type:"boo",
+        type: "boo",
         description: {
             text: "In-class project of designing the whole book (both cover and inside) of TypeCon2015:Condensed event. TypeCon is an annual conference presented by the non-profit Society of Typographic Aficionados (SOTA). <a href='http://www.typecon.com/'>Click to learn about TypeCon event</a> ",
         },
         processwork: ['2016/TypeConProcessWork.png'],
-        works: [{ name: 'Cover Design', src: '2016/TypeConDigital.png', type: 'image' },{ name: 'Cover Design', src: '2016/TypeConDigital2.png', type: 'image' },{ name: 'Cover Design', src: '2016/TypeCon1.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon2.jpg', type: 'image' },{ name: 'Cover Design', src: '2016/TypeCon3.jpg', type: 'image'},{ name: 'Cover Design', src: '2016/TypeCon5.jpg', type: 'image'},{ name: 'Cover Design', src: '2016/TypeCon6.jpg', type: 'image' },{ name: 'Cover Design', src: '2016/TypeCon7.jpg', type: 'image'},{ name: 'Cover Design', src: '2016/TypeCon8.jpg', type: 'image'},{ name: 'Cover Design', src: '2016/TypeCon9.jpg', type: 'image'},{ name: 'Cover Design', src: '2016/TypeCon10.jpg', type: 'image' }/*{ name: 'Entire Book Pdf', src: '<flippingbook lightbox="true" width="740px" heigh="480px" title="H.Pan TypeCon Book Spreads">https://online.flippingbook.com/view/183934/</flippingbook>', type: 'link' }*/]
+        works: [{ name: 'Cover Design', src: '2016/TypeConDigital.png', type: 'image' }, { name: 'Cover Design', src: '2016/TypeConDigital2.png', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon1.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon2.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon3.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon5.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon6.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon7.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon8.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon9.jpg', type: 'image' }, { name: 'Cover Design', src: '2016/TypeCon10.jpg', type: 'image' }/*{ name: 'Entire Book Pdf', src: '<flippingbook lightbox="true" width="740px" heigh="480px" title="H.Pan TypeCon Book Spreads">https://online.flippingbook.com/view/183934/</flippingbook>', type: 'link' }*/]
     },
 
     {
         title: "Alice in Wonderland Book Cover (Front, Back and Spine)",
         titlesrc: "2016titles/17boo.png",
-        type:"boo",
-        works: [{src: '2016/AliceInWonderlandBook.png', type: 'image' }]
+        type: "boo",
+        works: [{ src: '2016/AliceInWonderlandBook.png', type: 'image' }]
     },
 
     {
         title: "Gulliever's Travels Book Cover Design",
         titlesrc: "2016titles/16boo.png",
-        type:"boo",
+        type: "boo",
         description: {
 
         },
@@ -232,28 +227,28 @@ var GraphicDesignJsonList2016 = [
     {
         title: "V Planner Logo (Website Design, Business Card Designs, Letter Head Design, Advertisement Mock-Ups)",
         titlesrc: "2016titles/01log.png",
-        type:"int",
+        type: "int",
         processwork: ['2016/VPlannerProcess1.png', '2016/VPlannerProcess2.jpg', '2016/VPlannerProcess3.png', '2016/VPlannerProcess4.png', '2016/VPlannerProcess5.png'],
-        works: [{src: '2016/VPlanner9.jpg', type: 'image' },{src: '2016/VPlanner.png', type: 'image' },{src: '2016/VPlanner5.png', type: 'image' },{src: '2016/VPlanner2.png', type: 'image' },{src: '2016/VPlanner3.png', type: 'image' },{src: '2016/VPlanner4.png', type: 'image' },{src: '2016/VPlanner6.png', type: 'image' },{src: '2016/VPlanner7.jpg', type: 'image' },{src: '2016/VPlanner8.jpg', type: 'image' }]
+        works: [{ src: '2016/VPlanner9.jpg', type: 'image' }, { src: '2016/VPlanner.png', type: 'image' }, { src: '2016/VPlanner5.png', type: 'image' }, { src: '2016/VPlanner2.png', type: 'image' }, { src: '2016/VPlanner3.png', type: 'image' }, { src: '2016/VPlanner4.png', type: 'image' }, { src: '2016/VPlanner6.png', type: 'image' }, { src: '2016/VPlanner7.jpg', type: 'image' }, { src: '2016/VPlanner8.jpg', type: 'image' }]
     },
     {
         title: "3M Poster for Reflective Tape (See & Be Seen) Campaign",
         titlesrc: "2016titles/21pos.png",
-        type:"pos",
-        works: [{src: '2016/3M.png', type: 'image' }]
+        type: "pos",
+        works: [{ src: '2016/3M.png', type: 'image' }]
 
     },
     {
         title: "AIGA Medalist Seymour Chwast inspired poster (Oil Spills)",
         titlesrc: "2016titles/23pos.png",
-        type:"ill",
-        works: [{src: '2016/OilSpill.png', type: 'image' }]
+        type: "ill",
+        works: [{ src: '2016/OilSpill.png', type: 'image' }]
     },
     {
         title: "AIGA Medalist Seymour Chwast inspired poster (Child obesity)",
         titlesrc: "2016titles/22pos.png",
-        type:"ill",
-        works: [{src: '2016/StopChildObesity.png', type: 'image' }]
+        type: "ill",
+        works: [{ src: '2016/StopChildObesity.png', type: 'image' }]
     },
 
     /*  {
@@ -272,20 +267,20 @@ var GraphicDesignJsonList2016 = [
         {
             title: "Narrative illustration using colored pencil (Korean folktale named Haenim and Dalnim)",
             titlesrc: "2016titles/10ill.jpg",
-            type:"ill",
-            works: [{src: '2016/Illustration.jpg', type: 'image' }]
+            type: "ill",
+            works: [{ src: '2016/Illustration.jpg', type: 'image' }]
         },
        {
            title: "Northern Myotis Bat (Spot Illustration) using colored pencil",
            titlesrc: "2016titles/BatTitle.png",
            type: "ill",
-           works: [{src: '2016/Bat.png', type: 'image'}]
+           works: [{ src: '2016/Bat.png', type: 'image' }]
        },
 
     {
         title: "IBP T-Shirt Design (Front design, photographs)",
         titlesrc: "2016titles/12tsh.png",
-        type:"oth",
+        type: "oth",
         description: {
             text: "T-shirt design for International Buddy Program(IBP). <a href='https://isss.umn.edu/programs/interbuddy/'>Click to visit IBP website</a>" +
             "<br> IBP is sponsored by International Student and Scholar Services (ISSS). ISSS website: <a href='https://isss.umn.edu/'>Click to visit ISSS website</a>",
@@ -310,29 +305,31 @@ var GraphicDesignJsonList2016 = [
     {
         title: "Fizz Bee Product Design (A Fruit Beer Custom Product Design)",
         titlesrc: "2016titles/11pro.png",
-        type:"oth",
+        type: "oth",
         description: {
         },
         processwork: ['2016/FizzBeeProcess.jpg'],
-        works: [{src: '2016/fizzbee.png', type: 'image' },{src: '2016/FizzBee1.jpg', type: 'image' },{src: '2016/FizzBee2.jpg', type: 'image' },{src: '2016/FizzBee3.jpg', type: 'image' },{src: '2016/FizzBee4.jpg', type: 'image'},{src: '2016/FizzBee6.jpg', type: 'image'},{src: '2016/FizzBee9.jpg', type: 'image'} ,{src: '2016/FizzBee10.jpg', type: 'image' },{src: '2016/FizzBee11.jpg', type: 'image'},{src: '2016/FizzBee12.jpg', type: 'image' }]
+        works: [{ src: '2016/fizzbee.png', type: 'image' }, { src: '2016/FizzBee1.jpg', type: 'image' }, { src: '2016/FizzBee2.jpg', type: 'image' }, { src: '2016/FizzBee3.jpg', type: 'image' }, { src: '2016/FizzBee4.jpg', type: 'image' }, { src: '2016/FizzBee6.jpg', type: 'image' }, { src: '2016/FizzBee9.jpg', type: 'image' }, { src: '2016/FizzBee10.jpg', type: 'image' }, { src: '2016/FizzBee11.jpg', type: 'image' }, { src: '2016/FizzBee12.jpg', type: 'image' }]
     },
     {
         title: "MISA International Student Month (Posters and FB cover photos (each has 2 versions))",
         titlesrc: "2015titles/09pos.png",
-        type:"pos",
+        type: "pos",
         description: {
         },
         processwork: [],
-        works: [{ name: 'Poster', src: '2015/misa/MISAISM1.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAISM2.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAISM3.png', type: 'image' },{ name: 'Poster', src: '2015/misa/MISAISM4.png', type: 'image' }]
+        works: [{ name: 'Poster', src: '2015/misa/MISAISM1.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAISM2.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAISM3.png', type: 'image' }, { name: 'Poster', src: '2015/misa/MISAISM4.png', type: 'image' }]
     },
     {
         title: "Cereal Box Redesign Project",
         titlesrc: "2016titles/19pos.png",
-        type:"oth",
+        type: "oth",
         description: {},
-        works: [{ name: 'Poster', src: '2016/Redesign1.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign2.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign3.png', type: 'image' },{ name: 'Poster', src: '2016/Redesign4.png', type: 'image' }]
+        works: [{ name: 'Poster', src: '2016/Redesign1.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign2.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign3.png', type: 'image' }, { name: 'Poster', src: '2016/Redesign4.png', type: 'image' }]
     }
+
 ];
+
 
 
 
@@ -393,8 +390,7 @@ function addGraphicDesignPage(div_parent) {
     var ItemDivArray = [];
     window.onresize = graphic_onWindowResize;
 
-    addItemsForYear(2016, GraphicDesignJsonList2016);
-    addItemsForYear(2015, GraphicDesignJsonList2015);
+    addItemsForYear(null, GraphicDesignJsonList);
 
     graphic_onWindowResize();// Update Items View
 
@@ -473,10 +469,10 @@ function addGraphicDesignPage(div_parent) {
     }
 
     function addItemsForYear(year, items){
-        var div_year = document.createElement("DIV");
+        /*var div_year = document.createElement("DIV");
         div_year.className = "Year";
         div_year.innerText = String(year);
-        div_parent.appendChild(div_year);
+        div_parent.appendChild(div_year);*/
 
         var div_subparent1 = document.createElement("DIV");
         div_subparent1.setAttribute("style", "display:block;");
@@ -484,12 +480,12 @@ function addGraphicDesignPage(div_parent) {
         div_parent.appendChild(div_subparent1);
         ItemDivArray.push(div_subparent1);
 
-        var div_line = document.createElement("DIV");
+        /*var div_line = document.createElement("DIV");
         div_line.setAttribute("style","height:3px; width: 60%; background-color: rgb(10, 46, 50); margin-bottom: 60px; margin-left: auto; margin-right: auto; opacity: 0.1;");
         div_parent.appendChild(div_line);
 
         div_subparent1.DIV_YEAR = div_year;
-        div_subparent1.DIV_LINE = div_line;
+        div_subparent1.DIV_LINE = div_line;*/
     }
 
     function onGraphicDesignMenuClick(){
@@ -499,7 +495,7 @@ function addGraphicDesignPage(div_parent) {
         }
         graphic_onWindowResize();
 
-        for (var i = 0; i < ItemDivArray.length ; i++) {
+        /*for (var i = 0; i < ItemDivArray.length ; i++) {
             var div_items = ItemDivArray[i];
             if (div_items.children.length == 0) {
                 div_items.DIV_YEAR.style.display = "none";
@@ -508,7 +504,7 @@ function addGraphicDesignPage(div_parent) {
                 div_items.DIV_YEAR.style.display = "";
                 div_items.DIV_LINE.style.display = "";
             }
-        }        
+        } */       
     }
 
 

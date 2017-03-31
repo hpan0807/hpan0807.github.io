@@ -3,7 +3,7 @@
  */
 
 
-var AnimationList2016 = [
+var AnimationList = [
     {
         title: "An Egg and a Witch",
         titlesrc: "animation/EggWitch/EggWitch.mp4",
@@ -25,16 +25,12 @@ var AnimationList2016 = [
           description: "My first photography stop motion animation",
           works: [{ name: 'Poster', src: 'animation/PhotographyAnimation2.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation3.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation4.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation5.jpg', type: 'image' }, { name: 'Poster', src: 'animation/PhotographyAnimation1.mp4', type: 'video/mp4' }]
       },
-  
-];
-
-var AnimationList2015 = [
-     {
-         title: "The Law of the Jungle",
-         titlesrc: "animation/practices/TheLawoftheJungle.mp4",
-         type: "video/mp4",
-         description: ""
-     },
+    {
+        title: "The Law of the Jungle",
+        titlesrc: "animation/practices/TheLawoftheJungle.mp4",
+        type: "video/mp4",
+        description: ""
+    },
      {
          title: "Jumpling Flour Sack Study",
          titlesrc: "animation/practices/JumpingFlourSack.mp4",
@@ -49,6 +45,7 @@ var AnimationList2015 = [
      }
 ];
 
+
 function addAnimationPage(div_parent) {
 
     window.onresize = animation_onWindowResize;
@@ -58,8 +55,7 @@ function addAnimationPage(div_parent) {
     div_parent.appendChild(div_cushion);
 
     //Add Items
-    addItemsForYear(2016, AnimationList2016);
-    addItemsForYear(2015, AnimationList2015);
+    addItemsForYear(null, AnimationList);    
 
     //Adjust to environment
     animation_onWindowResize();
@@ -86,10 +82,10 @@ function addAnimationPage(div_parent) {
     }
 
     function addItemsForYear(year, items) {
-        var div_year = document.createElement("DIV");
+        /*var div_year = document.createElement("DIV");
         div_year.className = "Year";
         div_year.innerText = String(year);
-        div_parent.appendChild(div_year);
+        div_parent.appendChild(div_year);*/
 
 
         for (var i = 0; i < items.length; i++) {
@@ -135,9 +131,9 @@ function addAnimationPage(div_parent) {
             div_parent.appendChild(div_itemwrapper);
         }
 
-        var div_line = document.createElement("DIV");
+        /*var div_line = document.createElement("DIV");
         div_line.setAttribute("style", "height:3px; width: 60%; background-color: rgb(10, 46, 50); margin-bottom: 60px; margin-left: auto; margin-right: auto; opacity: 0.1;");
-        div_parent.appendChild(div_line);
+        div_parent.appendChild(div_line);*/
     }
 
 }
